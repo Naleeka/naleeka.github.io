@@ -1,0 +1,147 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  height: 85px;
+  gap: 5vw;
+  font-size: 0.85rem;
+  background: #fff;
+  border-bottom: 1px solid #eeeeee76;
+}
+#header .menu-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+#header .menu-content .heads ul li:first-child label {
+  padding-right: 1rem;
+}
+#header .right-btns .login {
+  padding-right: 2.5rem;
+}
+#header .right-btns .register {
+  padding: 0.8rem 2rem;
+  border: 2px solid var(--Almost-black);
+  border-radius: 20px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+#header .right-btns .register:hover {
+  padding: 0.8rem 2rem;
+  color: var(--Almost-white);
+  background: var(--Almost-black);
+  border-radius: 20px;
+}
+#header .menu {
+  cursor: pointer;
+  display: none;
+}
+#header .menu img {
+  position: absolute;
+  right: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#header .menu.active #menu-btn {
+  opacity: 0;
+}
+#header .menu #close-btn {
+  opacity: 0;
+}
+#header .menu.active #close-btn {
+  opacity: 1;
+}
+#header .menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .menu-content .heads ul,
+#header .menu-content .acc-logins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+#header .menu-content .heads ul {
+  list-style: none;
+}
+#header .menu-content .heads ul li {
+  position: relative;
+}
+#header .menu-content .heads ul li:nth-child(1) {
+  margin-right: 10px;
+}
+#header .menu-content .heads ul li a {
+  padding-inline: 1.5rem;
+}
+#header .menu-content .heads ul li label {
+  cursor: pointer;
+}
+#header .menu-content .heads ul li input[type="checkbox"] {
+  display: none;
+}
+#header .menu-content .heads ul li input[type="checkbox"]:checked ~ label img {
+  transform: rotateZ(180deg);
+  color: grey;
+}
+#header .menu-content .heads ul li label img {
+  transition: transform 0.35s ease;
+}
+#header .menu-content .heads ul li input[type="checkbox"] ~ .sub-menu ul {
+  transform: scaleY(0);
+  transition: transform 0.2s cubic-bezier(0, 0.77, 0.56, 1.03);
+}
+#header
+  .menu-content
+  .heads
+  ul
+  li
+  input[type="checkbox"]:checked
+  ~ .sub-menu
+  ul {
+  transform: scaleY(1);
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.048);
+}
+#header .menu-content .heads ul li .sub-menu ul {
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  transform-origin: top;
+  min-width: 150px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+#header .menu-content .heads ul li .sub-menu ul li a {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #ccc;
+  transition: background 0.2s ease;
+}
+#header .menu-content .heads ul li .sub-menu ul li a:hover {
+  background: rgba(107, 107, 107, 0.053);
+}
+#header .menu-content .acc-logins {
+  gap: 2rem;
+}
+#header .menu-content .acc-logins .register {
+  border: 1px solid var(--Almost-black);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+#header .menu-content .acc-logins .register:hover {
+  background: var(--Almost-black);
+  color: var(--Almost-white);
+}

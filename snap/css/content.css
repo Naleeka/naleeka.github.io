@@ -1,0 +1,69 @@
+#content {
+  padding-inline: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50vh;
+}
+#content .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 82vh;
+  margin-top: 20vh;
+  gap: 5vh;
+}
+#content .left h1 {
+  font-size: 3rem;
+  width: 58%;
+}
+#content .left p {
+  width: 70%;
+  line-height: 20px;
+  font-size: 0.9rem;
+  color: var(--medium-grey);
+}
+#content .left a.btn {
+  width: fit-content;
+  padding: 0.95rem 1.5rem;
+  font-size: 0.85rem;
+  border-radius: 15px;
+  color: var(--Almost-white);
+  background: var(--Almost-black);
+  margin-bottom: 10vh;
+  border: 1px solid var(--Almost-black);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+#content .left a.btn:hover {
+  background: var(--Almost-white);
+  color: var(--Almost-black);
+}
+#content .left .clients {
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#content .left .clients img {
+  width: 8vw;
+}
+#content .right {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+#content .right img {
+  width: 25vw;
+}
+#mobile-design-img {
+  display: none;
+}
+#content .left .clients img {
+  max-height: 20px;
+  object-fit: contain;
+}
+#content .left .clients img:nth-child(2) {
+  max-height: 30px;
+}
