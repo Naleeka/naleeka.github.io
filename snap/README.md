@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Naleeka/naleeka.github.io/tree/main/snap)
 - Live Site URL: [Add live site URL here](https://naleeka.github.io/easybank/)
 
 ## My process
@@ -62,6 +62,7 @@ Or is it not ??
 
 ## Author
 
-- Website - [Naleeka](https://www.your-site.com)
-- Frontend Mentor - [@Naleeka](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+<!-- - Website - [Naleeka](https://www.your-site.com) -->
+
+- Frontend Mentor - [@Naleeka](https://www.frontendmentor.io/profile/Naleeka)
+<!-- - Twitter - [@yourusername](https://www.twitter.com/yourusername) -->
