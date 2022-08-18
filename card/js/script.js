@@ -19,10 +19,9 @@ let validity = {
   cExpM: false,
   cExpY: false,
 };
-// clearAllInputs();
+clearAllInputs();
 
 confirmBtn.addEventListener("click", (e) => {
-  // validity = {};
   e.preventDefault();
   checkAll();
   checkMonth();
@@ -91,7 +90,8 @@ function checkAll() {
 }
 function checkCvc(fieldValue) {
   let isnum = /^\d+$/.test(fieldValue.trim());
-  if (fieldValue.length === 3 || fieldValue.length === 4) {
+  // if (fieldValue.length === 3 || fieldValue.length === 4) {
+  if (fieldValue.length === 3) {
     if (!isnum) {
       validity.cvc = false;
       let errorMsg = "Wrong format";

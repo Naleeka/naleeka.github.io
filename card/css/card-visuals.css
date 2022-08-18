@@ -21,8 +21,8 @@
   box-shadow: 3px 6px 20px 1px rgba(0, 0, 0, 0.278);
 }
 .card-front {
-  top: 15%;
-  left: 2vw;
+  top: 25vh;
+  left: 8vw;
   z-index: 3;
 }
 .logo {
