@@ -1,0 +1,136 @@
+@media screen and (max-width: 999px) {
+  #container {
+    flex-direction: column;
+  }
+  .bg-img #desktop {
+    display: none;
+  }
+  .bg-img #mobile {
+    display: block;
+  }
+  .card-back {
+    top: 15vh !important;
+    left: 30vw !important;
+  }
+  .card-front {
+    top: 25vh !important;
+    left: 10vw !important;
+  }
+  #input-fields,
+  #sPage {
+    margin-top: 15vh;
+  }
+  #input-fields form {
+    margin-top: 1rem;
+    transform: scale(1.2);
+  }
+  #input-fields form button {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 715px) {
+  .card-front,
+  .card-back {
+    transform: scale(0.85);
+  }
+}
+@media screen and (max-width: 615px) {
+  .card-back {
+    left: 20vw !important;
+  }
+  .card-front {
+    left: 5vw !important;
+  }
+  .card-front,
+  .card-back {
+    transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 515px) {
+  .card-back {
+    left: 15vw !important;
+  }
+  .card-front {
+    left: 0vw !important;
+  }
+  .card-front,
+  .card-back {
+    transform: scale(0.75);
+  }
+}
+@media screen and (max-width: 465px) {
+  .card-back {
+    top: 5vh !important;
+    left: 10vw !important;
+  }
+  .card-front {
+    top: 20vh !important;
+    left: -5vw !important;
+  }
+  .card-front,
+  .card-back {
+    transform: scale(0.7);
+  }
+  #input-fields form {
+    margin-top: -2rem !important;
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 420px) {
+  .card-back {
+    left: 5vw !important;
+  }
+  .card-front {
+    left: -10vw !important;
+  }
+  .card-front,
+  .card-back {
+    transform: scale(0.65);
+  }
+}
+@media screen and (max-width: 395px) {
+  .attribution {
+    margin-top: 40px;
+  }
+  .card-back {
+    top: 8vh !important;
+    left: -5vw !important;
+  }
+  .card-front {
+    top: 20vh !important;
+    left: -12vw !important;
+  }
+  #input-fields form {
+    margin-top: -5rem !important;
+    transform: scale(0.98);
+  }
+}
+@media screen and (max-width: 385px) {
+  .attribution {
+    margin-top: 80px;
+  }
+  .card-back {
+    top: 5vh !important;
+    left: 0vw !important;
+  }
+  .card-front {
+    top: 20vh !important;
+    left: -15vw !important;
+  }
+  .card-front,
+  .card-back {
+    transform: scale(0.6);
+  }
+  form,
+  #sPage {
+    transform: scale(0.85);
+  }
+  #input-fields form {
+    margin-top: -5rem !important;
+    transform: scale(0.9);
+    gap: 2.5rem;
+  }
+  #input-fields form button[type="submit"] {
+    margin-top: 0rem;
+  }
+}

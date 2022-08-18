@@ -1,0 +1,106 @@
+body.pending #input-fields {
+  opacity: 1;
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 5rem;
+  position: relative;
+}
+#input-fields form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+  padding-bottom: 5rem;
+}
+#input-fields form .card-item {
+  position: relative;
+}
+#input-fields form .card-item label {
+  position: absolute;
+  width: max-content;
+  bottom: calc(100% + 0.4rem);
+  left: 0;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#input-fields form .card-item input {
+  width: 380px;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid var(--light-grayish-violet);
+  padding: 0rem 1rem;
+  outline: 0;
+  text-transform: capitalize;
+}
+#input-fields form .card-item input:focus {
+  border: 1px solid var(--gradient-colors-2);
+}
+#input-fields form .card-item input::placeholder {
+  text-transform: initial;
+}
+#input-fields form .exp-date input {
+  max-width: 90px;
+}
+#input-fields form .exp-date {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+#input-fields form .thirdRow {
+  display: flex;
+  max-width: 380px;
+}
+#input-fields form .thirdRow .cvc {
+  flex: 1;
+  margin-left: 1rem;
+}
+#input-fields form .thirdRow .cvc #cvc {
+  width: 170px;
+  text-transform: uppercase;
+}
+.error-msg {
+  position: absolute;
+  display: none;
+  bottom: -18px;
+  font-size: 10px;
+  text-transform: capitalize;
+  color: var(--error-color);
+}
+div.error .error-msg {
+  display: block;
+}
+#input-fields form div.error input {
+  border-color: var(--error-color) !important;
+}
+div.mError .error-msg {
+  display: block;
+}
+#input-fields form div.mError input {
+  border-color: var(--error-color) !important;
+}
+.confirm-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+button[type="submit"] {
+  padding: 0.8rem;
+  width: 100%;
+  letter-spacing: 1px;
+  background: var(--very-dark-violet);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+body.successful #input-fields {
+  display: none;
+}

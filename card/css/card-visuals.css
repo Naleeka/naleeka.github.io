@@ -1,0 +1,70 @@
+#visuals {
+  width: fit-content;
+  position: relative;
+}
+#visuals img {
+  height: 100vh;
+}
+.card {
+  position: absolute;
+  top: 55%;
+  left: 10vw;
+  z-index: 2;
+}
+.card img {
+  max-width: 455px;
+  max-height: 243px;
+  object-fit: cover;
+}
+.card > img {
+  border-radius: 9px;
+  box-shadow: 3px 6px 20px 1px rgba(0, 0, 0, 0.278);
+}
+.card-front {
+  top: 15%;
+  left: 2vw;
+  z-index: 3;
+}
+.logo {
+  position: absolute;
+  top: 1.8em;
+  left: 2em;
+}
+.logo img {
+  max-width: 100px;
+  max-height: 50px;
+  object-fit: contain;
+}
+#visuals > div > div {
+  color: white;
+  position: absolute;
+}
+#visuals .card-number {
+  bottom: 4rem;
+  left: 1.3em;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+#visuals .cHName {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  bottom: 2.5em;
+  left: 2.5em;
+  font-weight: 400;
+}
+#visuals .exp {
+  right: 2.5em;
+  bottom: 2.5em;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+#visuals .card-back .cvc {
+  position: absolute;
+  right: 4rem;
+  top: 48%;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+  letter-spacing: 2px;
+}

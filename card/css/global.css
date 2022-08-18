@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+input,
+button,
+label {
+  font-family: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+:root {
+  --gradient-colors-1: hsl(249, 99%, 64%);
+  --gradient-colors-2: hsl(278, 94%, 30%);
+  --error-color: hsl(0, 100%, 66%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+}
+main {
+  min-height: 100vh;
+}
+body {
+  font-family: "Space Grotesk";
+  font-weight: 500;
+  min-height: 110vh;
+  width: 100%;
+}
+#container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.bg-img {
+  position: relative;
+}
+.bg-img #desktop {
+  display: block;
+}
+.bg-img #mobile {
+  display: none;
+  height: 40vh;
+  width: 100vw;
+  object-fit: cover;
+}
+body.pending #sPage {
+  display: none;
+}
+body.successful #sPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body.successful #sPage .title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1.2rem;
+  width: max-content;
+}
+.btn {
+  margin-top: 3rem;
+  padding: 0.8rem;
+  width: 100%;
+  letter-spacing: 1px;
+  background: var(--very-dark-violet);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  transition: background 0.35s ease, transform 0.2s ease;
+}
+.btn:hover {
+  background: hsl(278, 67%, 22%);
+}
+.btn:active {
+  transform: scale(0.98);
+  background: hsl(278, 52%, 24%);
+}
+body.successful #sPage p {
+  color: var(--dark-grayish-violet);
+}
+#sPage {
+  padding-inline: 20vw;
+  text-align: center;
+}
+.attribution {
+  bottom: 0;
+  left: 50%;
+}
