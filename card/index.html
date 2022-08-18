@@ -32,8 +32,8 @@
   </head>
   <body class="pending">
     <main>
-      <section id="container">
-        <section id="visuals">
+      <div id="container">
+        <div id="visuals">
           <div class="bg-img">
             <img
               src="./images/bg-main-desktop.png"
@@ -61,9 +61,9 @@
             <img src="./images/bg-card-back.png" alt="card back" />
             <div class="cvc">123</div>
           </div>
-        </section>
+        </div>
 
-        <section id="input-fields">
+        <div id="input-fields">
           <form action="#" method="POST">
             <div class="card-item name">
               <input
@@ -92,8 +92,6 @@
               <div class="card-item exp-date">
                 <input
                   type="text"
-                  min="1"
-                  max="12"
                   onchange="leadingZerosDate(this)"
                   name="card exp month"
                   placeholder="MM"
@@ -104,8 +102,6 @@
                 <label for="cDateM">Exp. date (mm/yy)</label>
                 <input
                   type="text"
-                  min="00"
-                  max="99"
                   name="card exp year"
                   onchange="leadingZerosDate(this)"
                   placeholder="YY"
@@ -121,9 +117,7 @@
                   name="cvc"
                   id="cvc"
                   maxlength="4"
-                  min="000"
                   onchange="leadingZeros(this)"
-                  max="999"
                   placeholder="e.g. 123"
                   required
                 />
@@ -135,19 +129,19 @@
               <button type="submit" class="btn">confirm</button>
             </div>
           </form>
-        </section>
+        </div>
 
-        <section id="sPage">
+        <div id="sPage">
           <img
             src="./images/icon-complete.svg"
             alt="Successful image"
             id="successImg"
           />
-          <h1 class="title">Thank you!</h1>
+          <h2 class="title">Thank you!</h2>
           <p>We've added your card details</p>
           <a href="index.html" class="btn">continue</a>
-        </section>
-      </section>
+        </div>
+      </div>
     </main>
     <div class="attribution">
       Challenge by

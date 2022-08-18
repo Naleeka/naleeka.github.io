@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Naleeka/naleeka.github.io/tree/main/card)
+- Live Site URL: [Add live site URL here](https://naleeka.github.io/card/)
 
 ## My process
 
@@ -53,6 +53,5 @@ I learned How to validate text inputs in JavaScript
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Naleeka)
-- Twitter - [@yourusername](https://twitter.com/_Naleeka)
+- Frontend Mentor - [@Naleeka](https://www.frontendmentor.io/profile/Naleeka)
+- Twitter - [@\_Naleeka](https://twitter.com/_Naleeka)
