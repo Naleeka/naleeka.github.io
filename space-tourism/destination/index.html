@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/destination.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../assets/shared/logo.svg" alt="logo image" />
+      </div>
+      <nav>
+        <div class="header-line"></div>
+        <ul>
+          <li>
+            <a href="../index.html">00<span>home</span></a>
+          </li>
+          <li>
+            <a href="#" class="active">01<span>destination</span></a>
+          </li>
+          <li>
+            <a href="#">02<span>crew</span></a>
+          </li>
+          <li>
+            <a href="#">03<span>technology</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section role="destination" class="destination hero">
+        <div class="container">
+          <h5><span>01</span>pick your destination</h5>
+          <div class="globes-content">
+            <input type="radio" name="globe" id="moon" checked />
+            <input type="radio" name="globe" id="mars" />
+            <input type="radio" name="globe" id="europa" />
+            <input type="radio" name="globe" id="titan" />
+            <div class="top"></div>
+            <div class="bottom">
+              <div class="globe-img">
+                <img
+                  class="moon"
+                  src="../assets/destination/image-moon.webp"
+                  alt="the moon"
+                />
+                <img
+                  class="europa"
+                  src="../assets/destination/image-europa.webp"
+                  alt="the moon"
+                />
+                <img
+                  class="mars"
+                  src="../assets/destination/image-mars.webp"
+                  alt="the moon"
+                />
+                <img
+                  class="titan"
+                  src="../assets/destination/image-titan.webp"
+                  alt="the moon"
+                />
+              </div>
+              <div class="globe-details">
+                <nav>
+                  <label for="moon" class="moon nav-active">moon</label>
+                  <label for="mars" class="mars">mars</label>
+                  <label for="europa" class="europa">europa</label>
+                  <label for="titan" class="titan">titan</label>
+                </nav>
+                <div class="detail detail-1">
+                  <h2 class="title">moon</h2>
+                  <p>
+                    See our planet as you’ve never seen it before. A perfect
+                    relaxing trip away to help regain perspective and come back
+                    refreshed. While you’re there, take in some history by
+                    visiting the Luna 2 and Apollo 11 landing sites.
+                  </p>
+                  <div class="vals">
+                    <div class="dist">
+                      <span>avg. distance</span>
+                      <div class="val">384,400 KM</div>
+                    </div>
+                    <div class="ETime">
+                      <span>Est. travel time</span>
+                      <div class="val">3 DAYS</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="detail detail-2">
+                  <h2 class="title">mars</h2>
+                  <p>
+                    Don’t forget to pack your hiking boots. You’ll need them to
+                    tackle Olympus Mons, the tallest planetary mountain in our
+                    solar system. It’s two and a half times the size of Everest!
+                  </p>
+                  <div class="vals">
+                    <div class="dist">
+                      <span>avg. distance</span>
+                      <div class="val">225 mil. KM</div>
+                    </div>
+                    <div class="ETime">
+                      <span>Est. travel time</span>
+                      <div class="val">9 months</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="detail detail-3">
+                  <h2 class="title">europa</h2>
+                  <p>
+                    The smallest of the four Galilean moons orbiting Jupiter,
+                    Europa is a winter lover’s dream. With an icy surface, it’s
+                    perfect for a bit of ice skating, curling, hockey, or simple
+                    relaxation in your snug wintery cabin.
+                  </p>
+                  <div class="vals">
+                    <div class="dist">
+                      <span>avg. distance</span>
+                      <div class="val">628 mil. km</div>
+                    </div>
+                    <div class="ETime">
+                      <span>Est. travel time</span>
+                      <div class="val">3 years</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="detail detail-4">
+                  <h2 class="title">titan</h2>
+                  <p>
+                    The only moon known to have a dense atmosphere other than
+                    Earth, Titan is a home away from home (just a few hundred
+                    degrees colder!). As a bonus, you get striking views of the
+                    Rings of Saturn.
+                  </p>
+                  <div class="vals">
+                    <div class="dist">
+                      <span>avg. distance</span>
+                      <div class="val">1.6 bil. km</div>
+                    </div>
+                    <div class="ETime">
+                      <span>Est. travel time</span>
+                      <div class="val">7 years</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

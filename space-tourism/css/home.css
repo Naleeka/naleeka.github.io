@@ -1,0 +1,46 @@
+.home {
+  padding-bottom: 12vh;
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.home .explore-btn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.home .explore-btn button {
+  background: #fff;
+  border: none;
+  font-size: 32px;
+  border-radius: 50%;
+  height: 275px;
+  width: 275px;
+  z-index: 1;
+  text-transform: uppercase;
+}
+.explore-btn .bg-circle {
+  position: absolute;
+  width: 275px;
+  height: 275px;
+  pointer-events: none;
+  background-image: radial-gradient(
+    ellipse farthest-corner at 45px 45px,
+    rgba(150, 150, 150, 0.8) 0%,
+    rgba(180, 180, 180, 0.2)
+  );
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: transform 0.3s cubic-bezier(0.42, 0.63, 0.59, 1.7),
+    opacity 0.8s cubic-bezier(0.42, 0.63, 0.59, 1.7);
+}
+.home .explore-btn:hover .bg-circle {
+  transform: scale(1.2);
+  opacity: 0.1;
+}
