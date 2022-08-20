@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Naleeka/naleeka.github.io/tree/main/rating-component)
 - Live Site URL: [Add live site URL here](https://naleeka.github.io/rating-component/)
 
 ### Built with
