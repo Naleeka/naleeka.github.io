@@ -17,7 +17,7 @@
 body {
   font-size: 18px;
 }
-.container {
+main {
   width: 100%;
   min-height: 100vh;
   background: var(--cream);
@@ -28,69 +28,186 @@ body {
   gap: 1rem;
   padding: 1rem;
 }
-.container .top-wrapper,
-.container .bottom-wrapper {
+main .top-wrapper,
+main .bottom-wrapper {
   display: flex;
   justify-content: space-between;
   min-width: 345px;
-  border-radius: 15px;
-  padding: 1.5rem;
+  border-radius: 12px;
+  padding: 1.3rem;
   gap: 0.5rem;
 }
-.container .top-wrapper .title {
+main .top-wrapper .title {
   font-weight: 400;
 }
-.container .top-wrapper .left {
+main .top-wrapper .left {
   display: flex;
+  color: var(--cream);
   flex-direction: column;
 }
-.container .top-wrapper {
+main .top-wrapper .left h2 {
+  font-size: 1.5rem;
+  margin-top: 0.3rem;
+  color: white;
+}
+main .top-wrapper .right img {
+  transform: scale(0.8);
+}
+main .top-wrapper {
   align-items: center;
   color: var(--very-pale-orange);
   font-weight: 400;
   min-height: 100px;
   background: var(--soft-red);
 }
-.container .bottom-wrapper {
+main .bottom-wrapper {
   flex-direction: column;
   align-items: flex-start;
   min-height: 400px;
   color: var(--dark-brown);
   background: var(--very-pale-orange);
 }
-.container .bottom-wrapper .title {
+main .bottom-wrapper .title {
   color: var(--dark-brown);
 }
-.container .bottom-wrapper .bars {
+main .bottom-wrapper .bars {
   min-height: 210px;
-  background: white;
   width: 100%;
 }
-h2.title {
+.bottom-wrapper h2.title {
   font-size: 1.5rem;
 }
-.container .bottom-wrapper .bottom-content {
+main .bottom-wrapper .bottom-content {
   border-top: 2px solid var(--cream);
   padding-top: 1rem;
+  margin-top: 1.5rem;
   display: flex;
   width: 100%;
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
 }
-.container .bottom-wrapper .bottom-content .text {
+main .bottom-wrapper .bottom-content .text {
   color: var(--medium-brown);
   font-size: 0.95rem;
 }
-.container .bottom-wrapper .bottom-content .left {
+main .bottom-wrapper .bottom-content .left {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
 }
-.container .bottom-wrapper .bottom-content .right {
+main .bottom-wrapper .bottom-content .left .val {
+  font-size: 1.25rem;
+}
+main .bottom-wrapper .bottom-content .right {
   display: flex;
   flex-direction: column;
   gap: 0rem;
   text-align: right;
   margin-top: 1.5rem;
+}
+.bottom-wrapper .bars {
+  padding-inline: 0;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-block: 1rem 0;
+  gap: 0.7rem;
+  user-select: none;
+}
+.bottom-wrapper .bars span {
+  font-size: 0.7rem;
+  color: var(--medium-brown);
+}
+.bottom-wrapper .bars .bar {
+  display: inline-block;
+  width: 2.1rem;
+  border-radius: 4px;
+  height: calc(25px * 2);
+  transform: scaleY(0);
+  background: var(--soft-red);
+  transform-origin: bottom;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.bottom-wrapper .bars.loaded > div {
+  transition: opacity 0.15s ease-in-out;
+}
+.bottom-wrapper .bars > div {
+  position: relative;
+  z-index: 0;
+}
+.bottom-wrapper .bars.loaded > div span.tooltip {
+  position: absolute;
+  pointer-events: none;
+  font-size: 1rem;
+  z-index: 100;
+  top: -2.5rem;
+  background: black;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+.bottom-wrapper .bars.loaded > div:hover span.tooltip {
+  opacity: 0.8;
+}
+/* hover-state */
+.bottom-wrapper .bars.loaded > div {
+  transition: filter 0.6s ease, transform 0.3s ease;
+}
+.bottom-wrapper .bars.loaded:hover > div {
+  transform-origin: bottom;
+  filter: grayscale(1);
+  transform: scaleY(0.99);
+}
+.bottom-wrapper .bars.loaded > div:hover {
+  filter: grayscale(0);
+  transform: scaleY(1);
+}
+.bottom-wrapper .bars.loaded > div > .day {
+  transition: color 0.5s ease;
+}
+.bottom-wrapper .bars.loaded > div:hover > .day {
+  color: var(--dark-brown);
+}
+/* active state */
+.bottom-wrapper .bars.loaded:active > div {
+  transform-origin: bottom;
+  filter: grayscale(1);
+  transform: scaleY(0.99);
+}
+.bottom-wrapper .bars.loaded > div:active {
+  filter: grayscale(0);
+  transform: scaleY(1);
+}
+.bottom-wrapper .bars.loaded > div:active span.tooltip {
+  opacity: 0.8;
+}
+
+.bottom-wrapper .bars.loaded .bar {
+  transform: scaleY(1);
+  animation: scaleUp 1s ease forwards;
+}
+@keyframes scaleUp {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.bottom-wrapper .bars .day {
+  margin-top: 0.8rem;
+}
+.bottom-wrapper .bars > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
