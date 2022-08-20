@@ -1,25 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Expenses chart component</title>
 
-  My balance
-  $921.48
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-wrapper">
+        <div class="left">
+          <h5 class="title">My balance</h5>
+          <h2>$921.48</h2>
+        </div>
+        <div class="right">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+      </div>
+      <div class="bottom-wrapper">
+        <h2 class="title">Spending - Last 7 days</h2>
+        <div class="bars"></div>
+        <div class="bottom-content">
+          <div class="left">
+            <div class="text">Total this month</div>
+            <h7 class="val">
+              <h2>$478.33</h2>
+            </h7>
+          </div>
+          <div class="right">
+            <h5 class="percentage">+2.4%</h5>
+            <div class="text">from last month</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+ 
 
-  Spending - Last 7 days
+
 
   mon
   tue
@@ -29,15 +67,17 @@
   sat
   sun
 
-  Total this month
-  $478.33
 
-  +2.4%
-  from last month
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+
+   -->
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+  </body>
 </html>
