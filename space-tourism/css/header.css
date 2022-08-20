@@ -6,6 +6,7 @@ header {
   justify-content: space-between;
   align-items: center;
   max-height: 96px;
+  z-index: 999;
   width: 100%;
 }
 header nav {

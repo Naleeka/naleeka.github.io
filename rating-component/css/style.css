@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --light-orange: hsl(25, 100%, 57%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: #7c8798;
+  --dark-blue: #252d37;
+  --very-dark-blue: #121417;
+}
+p {
+  font-size: 14px;
+  color: var(--light-grey);
+  line-height: 22px;
+}
+h2 {
+  font-weight: 400;
+}
+a {
+  color: inherit;
+  font-family: inherit;
+}
+footer {
+  padding: 1.4rem 0;
+}
+.rating-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.5rem;
+  align-items: center;
+  background: var(--very-dark-blue);
+  color: white;
+}
+.container {
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.8rem;
+  border-radius: 20px;
+  background: rgb(37, 45, 55);
+  background: linear-gradient(
+    180deg,
+    rgba(37, 45, 55, 1) -40%,
+    rgba(18, 20, 23, 1) 150%
+  );
+  position: relative;
+  transition: transform 1s ease;
+}
+.container.success {
+  transform: rotateY(180deg);
+}
+.front {
+  backface-visibility: hidden;
+}
+.star-icon {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark-blue);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+input[type="radio"] {
+  display: none;
+}
+.stars {
+  width: 100%;
+  margin-inline: auto;
+  margin-block: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.stars .star {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-grey);
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+#a:checked ~ .stars .star-1,
+#b:checked ~ .stars .star-2,
+#c:checked ~ .stars .star-3,
+#d:checked ~ .stars .star-4,
+#e:checked ~ .stars .star-5 {
+  background: var(--orange);
+  color: white;
+}
+.submit-div {
+  margin: 1.5rem 0 1rem;
+}
+.submit {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  color: white;
+  font-size: 15px;
+  border: none;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 24px;
+  background: var(--orange);
+  transition: background 0.25s ease-in-out, color 0.25s ease-out;
+}
+.submit:hover {
+  color: var(--orange);
+  background: white;
+}
+.stars .star:hover {
+  background: var(--light-grey);
+  color: white;
+}
+.submit:focus {
+  outline: 2px solid white;
+}
+.container .back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.4rem;
+  min-height: 100%;
+  border-radius: 24px;
+  width: 100%;
+  background: rgb(37, 45, 55);
+  background: linear-gradient(
+    180deg,
+    rgba(37, 45, 55, 1) -40%,
+    rgba(18, 20, 23, 1) 150%
+  );
+  position: absolute;
+  visibility: hidden;
+  left: 0;
+  right: 0;
+  transition: transform 1s ease, visibility 0s ease 0.3s;
+}
+.back > * {
+  transform: rotateY(180deg);
+}
+.container.success .back {
+  visibility: visible;
+}
+.back .hero-img {
+  width: fit-content;
+}
+.back .rate {
+  background: var(--dark-blue);
+  color: var(--orange);
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.back h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  padding-bottom: 0;
+}
+.back p {
+  text-align: center;
+  margin-bottom: 1rem;
+}

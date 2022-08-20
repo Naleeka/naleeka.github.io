@@ -1,0 +1,46 @@
+@media screen and (min-width: 800px) {
+  .container {
+    max-width: 55vw;
+    max-height: 70vh;
+    transform: scale(1.1);
+  }
+  .star-icon {
+    margin-bottom: 2.5rem;
+  }
+  .content {
+    gap: 1.5rem;
+  }
+  .content h2 {
+    font-weight: 700;
+    margin-bottom: 0rem;
+  }
+  .stars .star {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .stars {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 1090px) {
+  .container {
+    max-width: 25vw;
+    max-height: 70vh;
+    transform: scale(1.1);
+  }
+  .star-icon {
+    margin-bottom: 1.5rem;
+  }
+  .content {
+    gap: 0.5rem;
+  }
+  .content h2 {
+    font-weight: 700;
+    margin-bottom: 0rem;
+  }
+  .stars .star {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}

@@ -2,6 +2,7 @@
 .destination {
   background-image: url(../assets/destination/background-destination-desktop.jpg);
   min-height: 100vh;
+  padding-bottom: 5rem;
 }
 .destination .container {
   width: 100%;
@@ -11,7 +12,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
-  margin-top: 4rem;
+  padding-top: 6rem;
 }
 .destination .container h5 {
   margin-top: 1.5em;
@@ -40,6 +41,7 @@
   font-family: "Barlow Condensed";
   color: #979797;
   font-weight: 500;
+  margin-left: -0.7rem;
 }
 .container nav label {
   font-size: 0.8rem;
@@ -85,7 +87,7 @@ input[type="radio"] {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 5vw;
+  gap: 10vw;
 }
 .container .globes-content .bottom .globe-img,
 .container .globes-content .bottom .globe-details {
@@ -116,6 +118,7 @@ input[type="radio"] {
   text-align: left;
   padding-bottom: 4rem;
   border-bottom: 1px solid grey;
+  width: 90%;
 }
 .globe-details .detail {
   text-align: left;
