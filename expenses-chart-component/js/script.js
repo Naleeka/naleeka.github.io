@@ -1,12 +1,3 @@
-// const chartArray = fetch("data.json")
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => {
-//     let list = JSON.stringify(data);
-//     console.log(list[0]);
-//   });
-
 const chartArray = [
   {
     day: "mon",
