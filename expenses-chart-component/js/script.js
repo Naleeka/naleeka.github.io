@@ -65,6 +65,9 @@ window.addEventListener("load", () => {
     }
   }
 });
+
+// function
+
 function checkMaxAmount() {
   for (let i = 0; i < chartArray.length; i++) {
     const amount = chartArray[i].amount;
