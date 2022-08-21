@@ -1,5 +1,12 @@
 @media screen and (min-width: 1001px) {
-  main {
-    transform: scaleX(1.1);
+  main .top-wrapper,
+  main .bottom-wrapper {
+    min-width: 480px;
+  }
+  main .top-wrapper .title {
+    font-size: 1rem;
+  }
+  main .top-wrapper h2 {
+    font-size: 2.5rem;
   }
 }
