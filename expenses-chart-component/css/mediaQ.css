@@ -1,12 +1,61 @@
 @media screen and (min-width: 1001px) {
+  main {
+    gap: 1.3rem;
+  }
   main .top-wrapper,
   main .bottom-wrapper {
-    min-width: 480px;
+    width: 550px;
+    padding: 1.55rem 1.8rem;
+    border-radius: 20px;
   }
   main .top-wrapper .title {
     font-size: 1rem;
   }
-  main .top-wrapper h2 {
-    font-size: 2.5rem;
+  main .top-wrapper .left h2 {
+    font-size: 1.7rem;
+  }
+  main .top-wrapper .right img {
+    transform: scale(1.02);
+    margin: 0.5rem;
+  }
+  main .bottom-wrapper .title {
+    font-size: 1.8rem;
+  }
+  main .bottom-wrapper .bars {
+    gap: 1rem;
+  }
+  main .bottom-wrapper .bars .bar {
+    width: 2.8rem;
+  }
+  main .bottom-wrapper .bottom-content {
+    padding-top: 2rem;
+  }
+  main .bottom-wrapper .bottom-content .left .val {
+    margin-top: 0;
+    font-size: 1.8rem;
+  }
+  main .bottom-wrapper .bottom-content .right .percentage {
+    font-size: 1rem;
+    padding-bottom: 0.1rem;
+  }
+  main .bottom-wrapper .bottom-content .left .text {
+    letter-spacing: 1px;
+  }
+  main .bottom-wrapper .bottom-content .right .text {
+    letter-spacing: 1px;
+  }
+}
+@media screen and (min-width: 799px) {
+  main {
+    gap: 1.3rem;
+  }
+  main .top-wrapper,
+  main .bottom-wrapper {
+    min-width: 450px;
+    padding: 1.55rem 1.8rem;
+    border-radius: 20px;
+  }
+  main .bottom-wrapper .bottom-content {
+    padding-top: 1rem;
   }
 }
