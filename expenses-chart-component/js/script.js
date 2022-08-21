@@ -1,12 +1,3 @@
-// const chartArray = fetch("data.json")
-//   .then((response) => {
-//     return response.json();
-//   })
-//   .then((data) => {
-//     let list = JSON.stringify(data);
-//     console.log(list[0]);
-//   });
-
 const chartArray = [
   {
     day: "mon",
@@ -74,6 +65,9 @@ window.addEventListener("load", () => {
     }
   }
 });
+
+// function
+
 function checkMaxAmount() {
   for (let i = 0; i < chartArray.length; i++) {
     const amount = chartArray[i].amount;
