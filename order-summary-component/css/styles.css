@@ -73,6 +73,7 @@ footer {
 }
 .wrapper .top img {
   width: 100%;
+  object-fit: cover;
 }
 .wrapper .bottom {
   display: flex;
