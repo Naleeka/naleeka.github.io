@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mediaQ.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        padding: 1rem;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+        transition: color 0.2s ease, letter-spacing 0.2s ease;
+      }
+      .attribution a:hover {
+        color: hsl(179, 45%, 44%);
+        letter-spacing: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="bg-img">
+        <img
+          src="./images/pattern-background-mobile.svg"
+          alt="background image"
+        />
+      </div>
+      <div class="wrapper">
+        <div class="top">
+          <img src="./images/illustration-hero.svg" alt="order image" />
+        </div>
+        <div class="bottom">
+          <h1 class="title">Order Summary</h1>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="package">
+            <div class="img" title="Package Image">
+              <img src="./images/icon-music.svg" alt="Music Album photo" />
+            </div>
+            <div class="packDetails" title="Annual Plan">
+              <h5 class="packName">Annual Plan</h5>
+              <div class="packPrice">$59.99/year</div>
+            </div>
+            <a href="#" class="changeBtn cur">Change</a>
+          </div>
+        </div>
+        <button class="btn cur">
+          <span class="text">Proceed to Payment</span>
+          <span class="arrow"
+            ><i class="fa-solid fa-arrow-right-long"></i
+          ></span>
+        </button>
+        <a href="#" class="cancel cur"> Cancel Order</a>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/Naleeka">Naleeka</a>.
+      </div>
+    </footer>
+  </body>
+</html>
