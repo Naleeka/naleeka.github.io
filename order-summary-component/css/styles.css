@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+}
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --font-big: 1.35rem;
+  --font-medium: 1rem;
+  --font-small: 0.9rem;
+  --font-small-2: 0.88rem;
+  --font-small-3: 0.8rem;
+}
+h1 {
+  font-size: var(--font-big);
+  font-weight: 900;
+}
+h5 {
+  font-size: var(--font-small);
+  font-weight: 900;
+}
+p {
+  color: var(--desaturated-blue);
+  font-size: var(--font-small);
+  line-height: 1.5rem;
+  text-align: center;
+}
+main {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+footer {
+  padding: 1rem;
+}
+.bg-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+}
+.bg-img img {
+  filter: drop-shadow(0 -5px 30px rgba(30, 76, 119, 0.607));
+}
+.wrapper {
+  max-width: 330px;
+  min-height: 500px;
+  z-index: 1;
+  background: white;
+  border-radius: 20px;
+  color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.075);
+}
+.wrapper .top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 157px;
+  overflow: hidden;
+}
+.wrapper .top img {
+  width: 100%;
+}
+.wrapper .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  padding: 1.5rem 2.5rem;
+}
+.package {
+  margin-top: 1.25rem;
+  min-width: 280px;
+  min-height: 80px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  background: var(--very-pale-blue);
+  padding: 0.5rem;
+  padding-left: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.package:hover {
+  transform: scale(1.1);
+}
+
+.package .img img {
+  transition: transform 0.25s ease;
+}
+.package .img:hover img {
+  transform: scale(1.2);
+}
+.package .packDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.25s ease;
+  margin-right: 1rem;
+}
+.package .packDetails:hover {
+  transform: translateY(-3px);
+}
+.package .packDetails .packName {
+  font-size: var(--font-small-2);
+}
+.package .packDetails .packPrice {
+  font-size: var(--font-small-2);
+  color: var(--desaturated-blue);
+  font-weight: 500;
+}
+.package .changeBtn {
+  font-size: var(--font-small-3);
+  font-weight: 900;
+  color: var(--bright-blue);
+  margin-right: 0.5rem;
+  display: block;
+  line-height: normal;
+  height: 100%;
+  transition: transform 0.25s ease;
+}
+.package .changeBtn:hover {
+  transform: translateY(-3px);
+}
+.btn {
+  color: white;
+  background: var(--bright-blue);
+  width: 85%;
+  /* padding: 2rem 0 1.1rem; */
+  height: 50px;
+  border-radius: 0.8rem;
+  border: 0;
+  font-weight: 700;
+  box-shadow: 0px 20px 20px hsla(245, 75%, 52%, 0.19);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn span.text {
+  width: 100%;
+  display: block;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  top: 48%;
+  left: 50%;
+  transition: left 0.2s ease-in-out;
+}
+.btn span.arrow {
+  left: 110%;
+  font-size: 1.2rem;
+  transition: left 0.2s ease-in-out;
+}
+button:hover span.text {
+  left: 45%;
+}
+button:hover span.arrow {
+  left: 80%;
+}
+.cancel {
+  margin: 1.5rem auto 2rem;
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.cur {
+  cursor: pointer;
+  transition: opacity 0.25s ease-in;
+}
+.cur:hover {
+  opacity: 0.95;
+}
