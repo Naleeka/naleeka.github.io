@@ -1,0 +1,44 @@
+@media screen and (min-width: 1001px) {
+  :root {
+    --font-big: 1.8rem;
+    --font-small: 1.01rem;
+    --font-small-2: 1.1rem;
+  }
+  .bg-img img:first-child {
+    display: none;
+  }
+  .bg-img img:last-child {
+    display: block;
+  }
+  .wrapper {
+    max-width: 460px;
+  }
+  .wrapper .top {
+    height: fit-content;
+  }
+  .wrapper .bottom {
+    padding-inline: 3rem;
+  }
+  .wrapper .bottom p {
+    line-height: 1.6rem;
+  }
+  .package {
+    margin-top: 0.6rem;
+    min-width: 350px;
+    min-height: 100px;
+    padding: 1rem 1.5rem;
+  }
+  .package .packDetails {
+    flex: 1;
+    gap: 0.2rem;
+    margin-left: 1.5rem;
+  }
+  .btn {
+    width: 350px;
+  }
+  .cancel {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+}
