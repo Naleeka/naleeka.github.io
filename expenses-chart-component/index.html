@@ -16,7 +16,6 @@
 
     <title>Frontend Mentor | Expenses chart component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         padding: 1rem;
@@ -25,6 +24,10 @@
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
+        transition: color 0.2s ease;
+      }
+      .attribution a:hover {
+        color: hsl(179, 45%, 44%);
       }
     </style>
   </head>
@@ -33,10 +36,10 @@
       <div class="top-wrapper">
         <div class="left cur">
           <h5 class="title">My balance</h5>
-          <h2>$921.48</h2>
+          <h2 title="Balance">$921.48</h2>
         </div>
         <div class="right">
-          <img src="./images/logo.svg" alt="logo" />
+          <img src="./images/logo.svg" alt="SpenderZZ Logo" />
         </div>
       </div>
       <div class="bottom-wrapper">
@@ -65,7 +68,8 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/Naleeka">Naleeka</a>.
       </div>
     </footer>
     <script src="./js/script.js"></script>
