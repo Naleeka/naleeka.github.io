@@ -30,7 +30,7 @@
   <body>
     <main class="container">
       <div class="top-wrapper">
-        <div class="left">
+        <div class="left cur">
           <h5 class="title">My balance</h5>
           <h2>$921.48</h2>
         </div>
@@ -46,12 +46,14 @@
         <div class="bottom-content">
           <div class="left">
             <div class="text">Total this month</div>
-            <h7 class="val">
-              <h2>$478.33</h2>
+            <h7 class="val cur" title="This month Growth">
+              <h2>$<span data-max="478.33">0</span></h2>
             </h7>
           </div>
           <div class="right">
-            <h5 class="percentage">+2.4%</h5>
+            <h5 class="percentage cur" title="Growth">
+              +<span data-max="2.4">0</span>%
+            </h5>
             <div class="text">from last month</div>
           </div>
         </div>
