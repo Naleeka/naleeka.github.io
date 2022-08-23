@@ -131,10 +131,10 @@ main {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   background: var(--m-color);
-  transition: all 0.25s ease;
+  transition: all 0.35s ease;
 }
 .bottom div a:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .bottom div a i {
   margin-left: 0.5rem;
