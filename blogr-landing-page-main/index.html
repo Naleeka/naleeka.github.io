@@ -19,99 +19,218 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
+        font-family: inherit;
         padding: 1rem;
         font-size: 11px;
         text-align: center;
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: white;
         transition: color 0.2s ease, letter-spacing 0.2s ease;
       }
       .attribution a:hover {
-        color: hsl(179, 45%, 44%);
+        color: #323232;
         letter-spacing: 1px;
       }
     </style>
   </head>
   <body>
-    <main></main>
-    <!-- Product
+    <main>
+      <section class="header">
+        <a href="./index.html">
+          <img src="./images/logo.svg" alt="Blogr logo" class="logo" />
+        </a>
+        <img
+          src="./images/icon-hamburger.svg"
+          alt="menu icon"
+          class="menu-btn"
+        />
+        <img
+          src="./images/icon-close.svg"
+          alt="close button"
+          class="close-btn"
+        />
+      </section>
+      <section class="nav">
+        <ul>
+          <li>
+            <input
+              class="chk"
+              type="checkbox"
+              name="nav-head"
+              id="product"
+              checked="true"
+            />
+            <label for="product"
+              ><span>product</span>
+              <img src="./images/icon-arrow-dark.svg" alt=""
+            /></label>
+            <ul class="sub-menu">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="chk"
+              type="checkbox"
+              name="nav-head"
+              id="company"
+              checked="true"
+            />
+            <label for="company"
+              ><span>company</span>
+              <img src="./images/icon-arrow-dark.svg" alt=""
+            /></label>
+            <ul class="sub-menu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </li>
+          <li>
+            <input
+              class="chk"
+              type="checkbox"
+              name="nav-head"
+              id="connect"
+              checked="true"
+            />
+            <label for="connect"
+              ><span>connect</span>
+              <img src="./images/icon-arrow-dark.svg" alt=""
+            /></label>
+            <ul class="sub-menu">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </li>
+          <div class="logins">
+            <a href="#" class="login">login</a>
+            <a href="#" class="sign">signup</a>
+          </div>
+        </ul>
+      </section>
+      <section class="container" id="container">
+        <div class="page-1 page">
+          <div class="bg">
+            <img
+              src="./images/bg-pattern-intro-mobile.svg"
+              alt="intro background"
+              class="intro-pat"
+            />
+          </div>
+          <div class="content">
+            <h1 class="title">A modern publishing platform</h1>
+            <p>Grow your audience and build your online brand</p>
+            <div class="btns">
+              <a href="#" class="btn1">Start for free</a>
+              <a href="#details" class="btn2">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="page page-2" id="details">
+          <h2 class="main-h">Designed for the future</h2>
+          <img
+            src="./images/illustration-editor-mobile.svg"
+            alt="mobile editor"
+          />
+          <h2>Introducing an extensible editor</h2>
+          <p>
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
+          <h2>Robust content management</h2>
+          <p>
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you’re in full control.
+          </p>
+        </div>
+        <div class="page-3 page">
+          <img
+            src="./images/illustration-phones.svg"
+            alt="mobile phones"
+            class="mobile-img"
+          />
+          <div class="content">
+            <img src="./images/bg-pattern-circles.svg" alt="" class="bg" />
+            <h1>State of the Art Infrastructure</h1>
+            <p>
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+        </div>
+        <div class="page page-4">
+          <img
+            src="./images/illustration-laptop-mobile.svg"
+            alt="laptop"
+            class="laptop-img"
+          />
+          <h2>Free, open, simple</h2>
+          <p>
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+          <h2 class="c1">Powerful tooling</h2>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- 
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
   
   Login
   Sign Up
-
-  A modern publishing platform
-  Grow your audience and build your online brand
-
-  Start for Free
-  Learn More
-
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn -->
+   -->
 
     <footer>
+      <a href="#container" class="footer-logo">
+        <img src="./images/logo.svg" alt="Blogr" />
+      </a>
+      <div class="prods">
+        <h3 class="head">Product</h3>
+        <a href="#">Overview</a>
+        <a href="#">Pricing</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Features</a>
+        <a href="#">Integrations</a>
+      </div>
+      <div class="comp">
+        <h3 class="head">Company</h3>
+        <a href="#">About</a>
+        <a href="#">Team</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="con">
+        <h3 class="head">Connect</h3>
+        <a href="#">Contact</a>
+        <a href="#">Newsletter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -120,5 +239,16 @@
         <a href="https://www.frontendmentor.io/profile/Naleeka">Naleeka</a>.
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("input.chk").on("change", function () {
+        $("input.chk").not(this).prop("checked", false);
+      });
+    </script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

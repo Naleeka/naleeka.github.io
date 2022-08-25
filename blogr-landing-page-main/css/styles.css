@@ -9,16 +9,417 @@
   --Light-red: hsl(356, 100%, 66%);
   --Very-light-red: hsl(355, 100%, 74%);
   --Very-dark-blue: hsl(208, 49%, 24%);
+  --Very-dark-blue-2: hsla(208, 49%, 24%, 0.908);
   --Grayish-blue: hsl(240, 2%, 79%);
   --Very-dark-grayish-blue: hsl(207, 13%, 34%);
   --Very-dark-black-blue: hsl(240, 10%, 16%);
-  --Very-light-red: hsl(13, 100%, 72%);
   --Light-red: hsl(353, 100%, 62%);
   --Very-light-red: hsl(13, 100%, 72%);
-  --Light-red: hsl(353, 100%, 62%);
+}
+body {
+  width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+p {
+  color: var(--Very-Dark-Grayish-blue);
+  font-size: 1.05rem;
+  line-height: 1.8rem;
 }
 main {
   min-height: 100vh;
   width: 100%;
   font-family: var(--font-1);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+main .header {
+  position: fixed;
+  z-index: 1000;
+  top: 3.3rem;
+  left: 0.9rem;
+  right: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  transition: top 0.25s ease, left 0.25s ease, width 0.25s ease,
+    border-radius 0.5s ease 0.25s, background 0.1s ease,
+    padding-inline 0.25s ease;
+}
+main .header.sticks {
+  top: 0;
+  padding: 1rem 2rem;
+  left: 0;
+  width: 100%;
+  background: var(--Light-red);
+  border-end-end-radius: 60%;
+}
+main .header .logo {
+  transform: scale(0.8);
+}
+main .header .menu-btn {
+  transform: translateX(-50%) scaleY(0.45);
+  cursor: pointer;
+}
+main .header .close-btn {
+  cursor: pointer;
+  display: none;
+  width: 30px;
+  transform: translateX(-50%);
+  object-fit: contain;
+}
+.page {
+  min-height: 50vh;
+  color: var(--Very-dark-blue);
+}
+.page-1 {
+  width: 100%;
+  color: white;
+}
+.page-1 .bg {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(
+    to top left,
+    var(--Light-red) 0%,
+    var(--Very-light-red) 100%
+  );
+  overflow: hidden;
+  border-bottom-left-radius: 6.4rem;
+}
+.page-1 .bg img {
+  position: absolute;
+  top: -40%;
+  left: -90%;
+}
+.page-1 .content {
+  width: 100%;
+  min-height: 630px;
+  margin-top: 1.25rem;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+}
+.page-1 .content h1 {
+  font-family: var(--font-1);
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.page-1 .content p {
+  font-weight: 300;
+  font-size: 1.15rem;
+}
+.page-1 .content .btns {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.page-1 .content .btns a {
+  padding: 0.8rem 1rem;
+  border: 1px solid white;
+  border-radius: 2rem;
+  width: 140px;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.page-1 .content .btns a.btn1 {
+  color: var(--Light-red);
+  background: white;
+}
+.page-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-block: 5rem;
+  padding-inline: 2rem;
+  margin-bottom: 11rem;
+}
+.page-2 h2 {
+  font-size: 1.65rem;
+  letter-spacing: 0.2px;
+}
+.main-h {
+  margin-bottom: 3rem;
+}
+.page h2:not(:first-child) {
+  margin-top: 3rem;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+.page-3 {
+  min-height: 93.5vh;
+  background: linear-gradient(to bottom, #2f3044 20%, #3d4061);
+  border-top-right-radius: 6.4rem;
+  border-bottom-left-radius: 6.4rem;
+  position: relative;
+  margin-bottom: 6.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-3 .content {
+  position: relative;
+  width: 100%;
+  border-top-right-radius: 6.4rem;
+  border-bottom-left-radius: 6.4rem;
+  padding: 1.8rem;
+  color: white;
+  min-height: inherit;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.page-3 .content .bg {
+  width: 160%;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.page-3 .mobile-img {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  transform: translateY(-50%);
+  max-width: 102%;
+}
+.page-3 .content h1 {
+  z-index: 20;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 7rem;
+  margin-bottom: 1.3rem;
+}
+.page-3 .content p {
+  font-weight: 200;
+  letter-spacing: 0.3px;
+  line-height: 1.8rem;
+}
+.page-4 {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+.page-4 .laptop-img {
+  width: 100%;
+  transform: scale(1.33);
+  margin-bottom: 1.5rem;
+}
+.page-4 h2 {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.7rem;
+  padding-bottom: 0.5rem;
+}
+.page-4 p {
+  padding-inline: 1.8rem;
+  line-height: 1.8rem;
+}
+.page-4 h2.c1 {
+  margin-top: 2.5rem;
+}
+footer {
+  font-family: var(--font-2);
+  background: var(--Very-dark-black-blue);
+  border-start-end-radius: 100px;
+  color: white;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  padding-block: 4.5rem;
+  position: relative;
+}
+footer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 3.2rem;
+}
+.footer-logo {
+  margin-bottom: 5em;
+}
+footer .head {
+  font-family: var(--font-2);
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+footer a {
+  font-size: 1.15rem;
+  color: var(--Grayish-blue);
+}
+footer .attribution {
+  background: var(--Light-red);
+  position: absolute;
+  left: 0%;
+  right: 0;
+  bottom: -4.5rem;
+  display: block;
+  width: 100%;
+  border-start-start-radius: 50%;
+}
+main .nav {
+  position: fixed;
+  top: -50%;
+  width: 80vw;
+  left: 50%;
+  max-height: 0;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  display: none;
+  pointer-events: none;
+  border-bottom: 5px solid var(--Light-red);
+  border-right: 5px solid var(--Light-red);
+  box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.368);
+  transition: top 0.3s ease;
+  z-index: 1000;
+}
+.nav > ul {
+  width: 100%;
+}
+main.active .nav {
+  pointer-events: all;
+  top: 50%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  align-items: center;
+  animation: heightF 0.5s ease forwards;
+}
+@keyframes heightF {
+  0% {
+    transform-origin: top;
+    max-height: 0;
+    overflow: hidden;
+  }
+  100% {
+    overflow: auto;
+    max-height: 100vh;
+  }
+}
+main.active .close-btn {
+  display: block;
+  cursor: pointer;
+}
+main.active .menu-btn {
+  display: none;
+}
+main.active .container,
+main.active ~ footer {
+  filter: grayscale(1) blur(2px);
+  z-index: -1;
+}
+main .container {
+  filter: grayscale(0) blur(0);
+  transition: filter 0.35s ease;
+}
+ul {
+  list-style: none;
+  text-transform: capitalize;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.nav > ul > li {
+  padding-block: 0.8rem;
+}
+.nav label {
+  cursor: pointer;
+}
+ul.sub-menu {
+  background: hsla(240, 3%, 79%, 0.102);
+  border-radius: 5px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.sub-menu > li {
+  color: hsla(0, 0%, 0%, 0.708);
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+input:checked ~ .sub-menu,
+input:checked ~ .sub-menu {
+  max-height: 12rem;
+  margin-top: 0.5rem;
+}
+input:checked ~ label span {
+  opacity: 0.8;
+}
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+label img {
+  margin-left: 2rem;
+  transition: transform 0.6s ease;
+}
+input:checked ~ label img {
+  transform: rotateZ(180deg);
+}
+.logins {
+  border-top: 1px solid var(--Grayish-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding-block: 2rem;
+}
+.logins .login {
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.logins .login:hover {
+  background: #323232;
+  color: white;
+}
+.logins .sign {
+  color: white;
+  background: linear-gradient(
+    to right,
+    var(--Very-light-red),
+    var(--Light-red)
+  );
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+  transition: opacity 0.3s ease;
+}
+.logins .sign:hover {
+  opacity: 0.85;
 }

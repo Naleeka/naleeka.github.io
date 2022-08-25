@@ -1,0 +1,11 @@
+@media screen and (min-width: 768px) {
+  main .header {
+    padding-inline: 5rem;
+  }
+  main .header.sticks {
+    padding-inline: 7rem;
+  }
+  .page {
+    padding-inline: 8rem;
+  }
+}
