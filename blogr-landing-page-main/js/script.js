@@ -20,3 +20,9 @@ closeBtn.addEventListener("click", () => {
   main.classList.remove("active");
   header.classList.toggle("sticks", window.scrollY > 1);
 });
+
+checkBoxes.forEach((checkBox) => {
+  checkBox.addEventListener("click", () => {
+    console.log(checkBox.checked);
+  });
+});

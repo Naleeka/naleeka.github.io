@@ -15,24 +15,6 @@
     <link rel="stylesheet" href="./css/mediaQ.css" />
 
     <title>Frontend Mentor | [Blogr]</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-family: inherit;
-        padding: 1rem;
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: white;
-        transition: color 0.2s ease, letter-spacing 0.2s ease;
-      }
-      .attribution a:hover {
-        color: #323232;
-        letter-spacing: 1px;
-      }
-    </style>
   </head>
   <body>
     <main>
@@ -50,8 +32,77 @@
           alt="close button"
           class="close-btn"
         />
+        <section class="nav-desktop desktop">
+          <ul>
+            <div class="nav">
+              <li>
+                <input
+                  class="chk"
+                  type="checkbox"
+                  name="nav-head"
+                  id="product"
+                  checked="false"
+                />
+                <label for="product"
+                  ><span>product</span>
+                  <img src="./images/icon-arrow-light.svg" alt=""
+                /></label>
+                <ul class="sub-menu">
+                  <li><a href="./index.html">Overview</a></li>
+                  <li><a href="./index.html">Pricing</a></li>
+                  <li><a href="./index.html">Marketplace</a></li>
+                  <li><a href="./index.html">Features</a></li>
+                  <li><a href="./index.html">Integrations</a></li>
+                </ul>
+              </li>
+              <li>
+                <input
+                  class="chk"
+                  type="checkbox"
+                  name="nav-head"
+                  id="company"
+                  checked="false"
+                />
+                <label for="company"
+                  ><span>company</span>
+                  <img src="./images/icon-arrow-light.svg" alt=""
+                /></label>
+                <ul class="sub-menu">
+                  <li><a href="./index.html">About</a></li>
+                  <li><a href="./index.html">Team</a></li>
+                  <li><a href="./index.html">Blog</a></li>
+                  <li><a href="./index.html">Careers</a></li>
+                </ul>
+              </li>
+              <li>
+                <input
+                  class="chk"
+                  type="checkbox"
+                  name="nav-head"
+                  id="connect"
+                  checked="false"
+                />
+                <label for="connect"
+                  ><span>connect</span>
+                  <img src="./images/icon-arrow-light.svg" alt=""
+                /></label>
+                <ul class="sub-menu">
+                  <li><a href="./index.html">Contact</a></li>
+                  <li><a href="./index.html">Newsletter</a></li>
+                  <li><a href="./index.html">LinkedIn</a></li>
+                </ul>
+              </li>
+            </div>
+
+            <div class="logins">
+              <a href="./index.html" class="login">login</a>
+              <a href="./index.html" class="sign">sign up</a>
+            </div>
+          </ul>
+        </section>
       </section>
-      <section class="nav">
+
+      <section class="nav-mobile mobile">
         <ul>
           <li>
             <input
@@ -59,18 +110,18 @@
               type="checkbox"
               name="nav-head"
               id="product"
-              checked="true"
+              checked="false"
             />
             <label for="product"
               ><span>product</span>
               <img src="./images/icon-arrow-dark.svg" alt=""
             /></label>
             <ul class="sub-menu">
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Marketplace</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Integrations</a></li>
+              <li><a href="./index.html">Overview</a></li>
+              <li><a href="./index.html">Pricing</a></li>
+              <li><a href="./index.html">Marketplace</a></li>
+              <li><a href="./index.html">Features</a></li>
+              <li><a href="./index.html">Integrations</a></li>
             </ul>
           </li>
           <li>
@@ -79,17 +130,17 @@
               type="checkbox"
               name="nav-head"
               id="company"
-              checked="true"
+              checked="false"
             />
             <label for="company"
               ><span>company</span>
               <img src="./images/icon-arrow-dark.svg" alt=""
             /></label>
             <ul class="sub-menu">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Careers</a></li>
+              <li><a href="./index.html">About</a></li>
+              <li><a href="./index.html">Team</a></li>
+              <li><a href="./index.html">Blog</a></li>
+              <li><a href="./index.html">Careers</a></li>
             </ul>
           </li>
           <li>
@@ -98,21 +149,21 @@
               type="checkbox"
               name="nav-head"
               id="connect"
-              checked="true"
+              checked="false"
             />
             <label for="connect"
               ><span>connect</span>
               <img src="./images/icon-arrow-dark.svg" alt=""
             /></label>
             <ul class="sub-menu">
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Newsletter</a></li>
-              <li><a href="#">LinkedIn</a></li>
+              <li><a href="./index.html">Contact</a></li>
+              <li><a href="./index.html">Newsletter</a></li>
+              <li><a href="./index.html">LinkedIn</a></li>
             </ul>
           </li>
           <div class="logins">
-            <a href="#" class="login">login</a>
-            <a href="#" class="sign">signup</a>
+            <a href="./index.html" class="login">login</a>
+            <a href="./index.html" class="sign">signup</a>
           </div>
         </ul>
       </section>
@@ -122,7 +173,12 @@
             <img
               src="./images/bg-pattern-intro-mobile.svg"
               alt="intro background"
-              class="intro-pat"
+              class="intro-pat mobile"
+            />
+            <img
+              src="./images/bg-pattern-intro-desktop.svg"
+              alt="intro background"
+              class="desktop"
             />
           </div>
           <div class="content">
@@ -136,26 +192,36 @@
         </div>
         <div class="page page-2" id="details">
           <h2 class="main-h">Designed for the future</h2>
-          <img
-            src="./images/illustration-editor-mobile.svg"
-            alt="mobile editor"
-          />
-          <h2>Introducing an extensible editor</h2>
-          <p>
-            Blogr features an exceedingly intuitive interface which lets you
-            focus on one thing: creating content. The editor supports management
-            of multiple blogs and allows easy manipulation of embeds such as
-            images, videos, and Markdown. Extensibility with plugins and themes
-            provide easy ways to add functionality or change the looks of a
-            blog.
-          </p>
-          <h2>Robust content management</h2>
-          <p>
-            Flexible content management enables users to easily move through
-            posts. Increase the usability of your blog by adding customized
-            categories, sections, format, or flow. With this functionality,
-            you’re in full control.
-          </p>
+          <div class="img">
+            <img
+              src="./images/illustration-editor-mobile.svg"
+              alt="mobile editor"
+              class="mobile"
+            />
+            <img
+              src="./images/illustration-editor-desktop.svg"
+              alt="editor"
+              class="desktop"
+            />
+          </div>
+          <div class="text">
+            <h2>Introducing an extensible editor</h2>
+            <p>
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+            <h2>Robust content management</h2>
+            <p>
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
+            </p>
+          </div>
         </div>
         <div class="page-3 page">
           <img
@@ -178,33 +244,33 @@
           <img
             src="./images/illustration-laptop-mobile.svg"
             alt="laptop"
-            class="laptop-img"
+            class="laptop-img mobile"
           />
-          <h2>Free, open, simple</h2>
-          <p>
-            Blogr is a free and open source application backed by a large
-            community of helpful developers. It supports features such as code
-            syntax highlighting, RSS feeds, social media integration,
-            third-party commenting tools, and works seamlessly with Google
-            Analytics. The architecture is clean and is relatively easy to
-            learn.
-          </p>
-          <h2 class="c1">Powerful tooling</h2>
-          <p>
-            Batteries included. We built a simple and straightforward CLI tool
-            that makes customization and deployment a breeze, but capable of
-            producing even the most complicated sites.
-          </p>
+          <img
+            src="./images/illustration-laptop-desktop.svg"
+            alt="laptop"
+            class="laptop-img desktop"
+          />
+          <div class="text">
+            <h2>Free, open, simple</h2>
+            <p>
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+            <h2 class="c1">Powerful tooling</h2>
+            <p>
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
         </div>
       </section>
     </main>
-    <!-- 
-
-  
-  Login
-  Sign Up
-   -->
-
     <footer>
       <a href="#container" class="footer-logo">
         <img src="./images/logo.svg" alt="Blogr" />
@@ -239,11 +305,7 @@
         <a href="https://www.frontendmentor.io/profile/Naleeka">Naleeka</a>.
       </div>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $("input.chk").on("change", function () {
         $("input.chk").not(this).prop("checked", false);
