@@ -8,15 +8,8 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -33,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [SOLUTION ](https://your-solution-url.com)
-- Live Site URL: [LIVE SITE ](https://your-live-site-url.com)
+- Solution URL: [SOLUTION ](https://github.com/Naleeka/naleeka.github.io/tree/main/blogr-landing-page-main)
+- Live Site URL: [LIVE SITE ](https://naleeka.github.io/blogr-landing-page-main/)
 
 ### Built with
 
