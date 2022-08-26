@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+.desktop {
+  display: none;
+}
 :root {
   --font-1: "Overpass";
   --font-2: "Ubuntu";
@@ -15,6 +18,7 @@
   --Very-dark-black-blue: hsl(240, 10%, 16%);
   --Light-red: hsl(353, 100%, 62%);
   --Very-light-red: hsl(13, 100%, 72%);
+  font-size: 16px;
 }
 body {
   width: 100%;
@@ -31,6 +35,20 @@ p {
   color: var(--Very-Dark-Grayish-blue);
   font-size: 1.05rem;
   line-height: 1.8rem;
+}
+.attribution {
+  font-family: inherit;
+  padding: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: white;
+  transition: color 0.2s ease, letter-spacing 0.2s ease;
+}
+.attribution a:hover {
+  color: #323232;
+  letter-spacing: 1px;
 }
 main {
   min-height: 100vh;
@@ -61,7 +79,7 @@ main .header.sticks {
   border-end-end-radius: 60%;
 }
 main .header .logo {
-  transform: scale(0.8);
+  transform: scale(0.8) translateY(20%);
 }
 main .header .menu-btn {
   transform: translateX(-50%) scaleY(0.45);
@@ -128,14 +146,16 @@ main .header .close-btn {
   width: 95%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
   margin-top: 2rem;
 }
 .page-1 .content .btns a {
   padding: 0.8rem 1rem;
   border: 1px solid white;
   border-radius: 2rem;
-  width: 140px;
+  /* width: 140px; */
+  width: fit-content;
   font-weight: 700;
   font-size: 1.05rem;
 }
@@ -166,7 +186,8 @@ main .header .close-btn {
   margin-bottom: 1rem;
 }
 .page-3 {
-  min-height: 93.5vh;
+  /* min-height: 93.5vh; */
+  height: 630px;
   background: linear-gradient(to bottom, #2f3044 20%, #3d4061);
   border-top-right-radius: 6.4rem;
   border-bottom-left-radius: 6.4rem;
@@ -183,7 +204,8 @@ main .header .close-btn {
   border-bottom-left-radius: 6.4rem;
   padding: 1.8rem;
   color: white;
-  min-height: inherit;
+  height: 100%;
+  /* min-height: inherit; */
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -191,9 +213,13 @@ main .header .close-btn {
   align-items: center;
   text-align: center;
 }
+.page-3 .content p {
+  z-index: 10;
+}
 .page-3 .content .bg {
   width: 160%;
   top: 10%;
+  z-index: 1;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -272,6 +298,10 @@ footer .head {
 footer a {
   font-size: 1.15rem;
   color: var(--Grayish-blue);
+  transition: color 0.25s ease;
+}
+footer a:hover {
+  color: white;
 }
 footer .attribution {
   background: var(--Light-red);
@@ -283,7 +313,7 @@ footer .attribution {
   width: 100%;
   border-start-start-radius: 50%;
 }
-main .nav {
+main .nav-mobile {
   position: fixed;
   top: -50%;
   width: 80vw;
@@ -297,14 +327,14 @@ main .nav {
   pointer-events: none;
   border-bottom: 5px solid var(--Light-red);
   border-right: 5px solid var(--Light-red);
-  box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.368);
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.244);
   transition: top 0.3s ease;
   z-index: 1000;
 }
-.nav > ul {
+.nav-mobile > ul {
   width: 100%;
 }
-main.active .nav {
+main.active .nav-mobile {
   pointer-events: all;
   top: 50%;
   overflow: auto;
@@ -348,10 +378,13 @@ ul {
 input[type="checkbox"] {
   display: none;
 }
-.nav > ul > li {
+.nav-desktop {
+  display: none;
+}
+.nav-mobile > ul > li {
   padding-block: 0.8rem;
 }
-.nav label {
+.nav-mobile label {
   cursor: pointer;
 }
 ul.sub-menu {
@@ -361,6 +394,7 @@ ul.sub-menu {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
+  user-select: none;
 }
 .sub-menu > li {
   color: hsla(0, 0%, 0%, 0.708);
@@ -368,10 +402,16 @@ ul.sub-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
 }
-input:checked ~ .sub-menu,
-input:checked ~ .sub-menu {
+.sub-menu > li > a {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.sub-menu > li > a:hover {
+  color: black;
+}
+.nav-mobile ul li input:checked ~ .sub-menu,
+.nav-mobile ul li input:checked ~ .sub-menu {
   max-height: 12rem;
   margin-top: 0.5rem;
 }
