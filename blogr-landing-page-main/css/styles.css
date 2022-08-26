@@ -154,10 +154,9 @@ main .header .close-btn {
   padding: 0.8rem 1rem;
   border: 1px solid white;
   border-radius: 2rem;
-  /* width: 140px; */
   width: fit-content;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
 }
 .page-1 .content .btns a.btn1 {
   color: var(--Light-red);
