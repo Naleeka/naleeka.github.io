@@ -101,7 +101,7 @@ main {
   border-bottom: 1px solid var(--very-dark-blue-3);
   padding-bottom: 1rem;
 }
-.vals section {
+.vals div {
   display: flex;
   align-items: center;
   justify-content: space-between;
