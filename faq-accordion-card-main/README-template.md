@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [ SOLUTION](https://your-solution-url.com)
-- Live Site URL: [ LIVE SITE](https://your-live-site-url.com)
+- Solution URL: [ SOLUTION](https://github.com/Naleeka/naleeka.github.io/tree/main/faq-accordion-card-main)
+- Live Site URL: [ LIVE SITE](naleeka.github.io/faq-accordion-card-main/)
 
 ## My process
 
