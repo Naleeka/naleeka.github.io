@@ -1,0 +1,13 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  background: var(--soft-blue);
+  width: 100%;
+  padding: 0.5rem;
+  color: white;
+  font-size: 20px;
+}
+footer .attribution a {
+  color: var(--very-dark-blue-1);
+  text-decoration: none;
+}

@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 25px;
+  }
+  main {
+    width: 520px;
+  }
+  .creator:hover {
+    padding-left: 2.7rem;
+  }
+}
+@media screen and (min-width: 1028px) {
+  :root {
+    font-size: 18px;
+  }
+  main {
+    width: 350px;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .vals {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  .vals > section {
+    transform: scale(1.1);
+  }
+  .creator:hover {
+    padding-left: 2.7rem;
+  }
+}

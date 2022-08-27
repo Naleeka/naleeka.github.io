@@ -1,5 +1,5 @@
 @media screen and (min-width: 1440px) {
-  h2 {
+  span {
     font-size: 1rem;
   }
   main {
@@ -23,8 +23,6 @@
   main .content .title {
     text-align: left;
     font-size: 2rem;
-  }
-  main .content .faqs {
   }
 }
 @media screen and (min-width: 1024px) {
