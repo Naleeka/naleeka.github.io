@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [SOLUTION ](https://your-solution-url.com)
-- Live Site URL: [LIVE SITE ](https://your-live-site-url.com)
+- Solution URL: [SOLUTION ](https://github.com/Naleeka/naleeka.github.io/tree/main/nft-preview-card-component-main)
+- Live Site URL: [LIVE SITE ](https://naleeka.github.io/nft-preview-card-component-main/)
 
 ## My process
 
