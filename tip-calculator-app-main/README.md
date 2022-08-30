@@ -35,10 +35,9 @@ Mobile View 👇
 
 ### Links
 
-- Solution URL: [SOLUTION](https://your-solution-url.com)
-- Live Site URL: [LIVE SERVER](https://your-live-site-url.com)
+- Solution URL: [SOLUTION](https://github.com/Naleeka/naleeka.github.io/tree/main/tip-calculator-app-main)
 
-## My process
+- Live Site URL: [LIVE SERVER](https://naleeka.github.io/tip-calculator-app-main/)
 
 ### Built with
 
