@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+  font-size: 16px;
+}
+input {
+  text-align: right;
+  border: 0;
+  background: var(--very-light-grayish-cyan);
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding-inline: 1rem;
+  font-size: 1.5rem;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="number"]:focus {
+  outline: 2px solid var(--grayish-cyan);
+}
+input::placeholder {
+  color: var(--grayish-cyan);
+}
+button {
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.1rem;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--light-grayish-cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+header {
+  width: 100%;
+  text-transform: uppercase;
+  color: var(--very-dark-cyan);
+}
+header h1 {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0.6rem;
+}
+main {
+  width: 63vw;
+  height: 46vh;
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: 3px 3px 25px hsla(186, 14%, 56%, 0.316);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.inputs {
+  color: var(--dark-grayish-cyan);
+  width: 50%;
+  display: flex;
+  padding-top: 2rem;
+  padding-right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.output {
+  color: white;
+  width: 50%;
+  padding: 2rem 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 380px;
+  background: var(--very-dark-cyan);
+  border-radius: 1rem;
+  gap: 2rem;
+  position: relative;
+}
+.icon {
+  pointer-events: none;
+}
+.bill {
+  position: relative;
+}
+.bill label {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+}
+.bill .icon {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 2rem;
+}
+.tips {
+  position: relative;
+}
+
+/* cursor pointers */
+.tips .tVal label,
+button {
+  cursor: pointer;
+}
+/* --------------- */
+.pNum {
+  position: relative;
+  margin-top: 1rem;
+}
+.pNum label {
+  position: absolute;
+}
+.pNum label:first-child {
+  top: -2rem;
+}
+.pNum .icon {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#C-el::placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+}
+#C-el {
+  min-width: 7rem;
+  height: 3.5rem;
+  position: relative;
+}
+.tips .tVal {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 1.5rem;
+}
+.tips .title {
+  margin-bottom: 1rem;
+}
+.tips .tVal label {
+  border-radius: 0.25rem;
+  text-align: center;
+  min-width: 7rem;
+  min-height: 3rem;
+  padding-block: 0.5rem;
+  margin-right: 0.8rem;
+  margin-bottom: 0.8rem;
+  background: var(--very-dark-cyan);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.tips .tVal .custom {
+  color: var(--very-dark-cyan);
+  background: var(--very-light-grayish-cyan);
+}
+.output > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.output > div .val {
+  font-size: 3rem;
+  letter-spacing: 0;
+  color: var(--strong-cyan);
+}
+.output > div .text {
+  position: relative;
+}
+.output > div .text::after {
+  content: "/ person";
+  display: block;
+  width: max-content;
+  position: absolute;
+  font-size: 0.8rem;
+  bottom: -1.2rem;
+  color: var(--grayish-cyan);
+  left: 0;
+}
+
+/*-------------------------- 
+*Hover effects
+*/
+.tVal label:hover {
+  background: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+.tVal .custom {
+  margin-inline: 0.5rem;
+  border-radius: 0.25rem;
+  width: 6rem;
+  padding-block: 0.5rem;
+  margin-bottom: 1rem;
+  height: 2.5rem;
+}
+
+/* -------------------------- */
+
+.reset-btn {
+  width: 80%;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 0px;
+  border-radius: 0.2rem;
+  cursor: not-allowed;
+}
+.error-msg {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  text-transform: capitalize;
+  color: rgba(205, 12, 12, 0.715);
+  display: none;
+}
+.bill .error-msg,
+.pNum .error-msg {
+  top: -2rem;
+}
+.tips #op-1:checked ~ .tVal .op-1,
+.tips #op-2:checked ~ .tVal .op-2,
+.tips #op-3:checked ~ .tVal .op-3,
+.tips #op-4:checked ~ .tVal .op-4,
+.tips #op-5:checked ~ .tVal .op-5,
+.tips #custom:checked ~ .tVal .custom {
+  background: var(--light-grayish-cyan);
+  color: var(--very-dark-cyan);
+}

@@ -1,0 +1,71 @@
+@media screen and (max-height: 910px) {
+  main {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  :root {
+    font-size: 14px;
+  }
+  header {
+    margin-top: 3vh;
+  }
+  main {
+    max-width: 60rem;
+    flex-direction: column;
+    height: 100%;
+    gap: 4rem;
+  }
+  .inputs {
+    width: 100%;
+    gap: 3rem;
+  }
+  .output {
+    width: 100%;
+    min-height: 30vh;
+  }
+  .tips .tVal {
+    justify-content: space-between;
+  }
+  .tips .tVal label {
+    min-width: 7.5rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  :root {
+    font-size: 12px;
+  }
+  header {
+    margin-top: 3vh;
+  }
+  main {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    gap: 4rem;
+  }
+  .inputs {
+    width: 100%;
+    gap: 3rem;
+  }
+  .output {
+    width: 100%;
+    min-height: 30vh;
+    gap: 1rem;
+  }
+  .output > div:last-child {
+    margin-bottom: 2rem;
+  }
+  .tips .tVal {
+    justify-content: space-between;
+  }
+  .tips .tVal label {
+    min-width: 7.5rem;
+  }
+}
+@media screen and (max-height: 600px) {
+  .output {
+    min-height: 50vh;
+  }
+}
