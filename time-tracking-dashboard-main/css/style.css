@@ -113,7 +113,8 @@ main {
   transition: height 0.25s ease, display 0s ease;
 }
 .profile .bio p {
-  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
 }
 .profile.active .bio {
   margin-top: 1rem;
