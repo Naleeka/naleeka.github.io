@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [SOLUTION](https://your-solution-url.com)
-- Live Site URL: [LIVE HERE](https://your-live-site-url.com)
+- Solution URL: [SOLUTION](https://github.com/Naleeka/naleeka.github.io/tree/main/time-tracking-dashboard-main)
+- Live Site URL: [LIVE HERE](https://naleeka.github.io/time-tracking-dashboard-main/)
 
 ## My process
 
