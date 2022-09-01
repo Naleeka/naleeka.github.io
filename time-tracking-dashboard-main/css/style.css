@@ -10,6 +10,7 @@
 */
 p {
   text-transform: capitalize;
+  font-size: 1rem;
 }
 label {
   text-transform: capitalize;
@@ -32,7 +33,7 @@ label {
   --dark-blue: #1c1f4a;
   --desaturated-blue: #6f76c8;
   --pale-blue: #bdc1ff;
-  font-size: 16px;
+  font-size: 18px;
 }
 body {
   min-height: 100vh;
@@ -41,6 +42,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: clamp(6rem, 1vw, 14rem);
 }
 button {
   cursor: pointer;
@@ -48,9 +50,8 @@ button {
 main {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  height: 28rem;
   gap: 2rem;
-  width: max-content;
+  transition: all 0.25s ease;
 }
 .nav-bar {
   display: flex;
@@ -58,13 +59,13 @@ main {
   align-items: center;
   background: var(--dark-blue);
   border-radius: 1.5rem;
-  width: 16rem;
+  width: 14rem;
   height: 100%;
   overflow: hidden;
 }
 .profile {
   border-radius: 1.5rem;
-  height: 17rem;
+  height: 18rem;
   width: 100%;
   background: var(--blue);
   padding: 2rem 1.5rem;
@@ -72,33 +73,52 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  position: relative;
   cursor: pointer;
   overflow: hidden;
   user-select: text;
-  transition: height 0.25s ease;
+  transition: height 0.25s ease, filter 0.25s ease-in-out;
+}
+.arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: white;
+  transform: translateX(-50%);
+  animation: pops 0.25s ease 10;
+}
+.profile.active .arrow {
+  transform: translateX(-50%) rotateZ(180deg);
+}
+.profile:hover {
+  filter: brightness(1.1);
 }
 .profile.active {
-  height: 25rem;
+  height: 100%;
 }
 .profile.active ~ .navs {
   padding-block: 1rem;
 }
+.profile p {
+  font-size: 1.5rem;
+}
 .profile h1 {
   font-weight: 300;
+  font-size: 2.5rem;
 }
 .profile .bio {
   height: 0;
   display: none;
+  transition: height 0.25s ease, display 0s ease;
 }
 .profile .bio p {
-  margin-top: 0.5rem;
   font-size: 0.9rem;
 }
 .profile.active .bio {
   margin-top: 1rem;
-  height: fit-content;
+  height: 5rem;
   display: block;
-  transition: height 0.25s ease 0.25s, margin-top 0.25s ease;
 }
 .pImg {
   width: 4rem;
@@ -109,8 +129,8 @@ main {
   overflow: hidden;
 }
 .profile a img {
-  width: 4rem;
-  height: 4rem;
+  width: 100%;
+  height: 100%;
   border: 3px solid white;
   border-radius: 50%;
 }
@@ -179,13 +199,19 @@ label.active {
 .card.view .content {
   transform: translateY(7rem);
 }
+.card.view .content > *:not(.head) {
+  opacity: 0;
+}
+.content > *:not(.head) {
+  opacity: 1;
+}
 .card.view .bg-img img {
   top: 1rem;
   right: 50%;
   transform: translateX(50%) rotateZ(-45deg) scale(1.25);
 }
 .bg-img {
-  padding: 2rem 1rem;
+  padding: 1.2rem 1rem;
   position: relative;
   user-select: none;
 }
@@ -193,7 +219,7 @@ label.active {
   position: absolute;
   top: 0rem;
   right: 1rem;
-  height: 3.5rem;
+  height: 3.6rem;
   object-fit: contain;
   transform: scale(1.2);
   transition: all 0.25s ease;
@@ -206,7 +232,7 @@ label.active {
   position: absolute;
   background: var(--main-color);
   left: 1rem;
-  top: 5rem;
+  top: 4rem;
   right: 1rem;
   color: #1f1f1f;
 }
@@ -227,14 +253,14 @@ label.active {
 .content {
   z-index: 1;
   background: var(--dark-blue);
-  transform-origin: bottom;
-  width: 101%;
-  height: 80%;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  transform-origin: top;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
   display: flex;
   gap: 0.5rem;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   flex-direction: column;
   transition: filter 0.25s ease, transform 0.1s ease;
 }
@@ -260,8 +286,8 @@ label.active {
 }
 .content h1 {
   font-weight: 300;
-  font-size: 2.5rem;
-  margin-top: 1.8rem;
+  font-size: 3rem;
+  margin-top: 1rem;
 }
 .card-1 {
   --main-color: var(--light-red-1);
