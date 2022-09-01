@@ -1,80 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <main>
+      <div class="nav-bar">
+        <div class="profile active">
+          <a href="#" class="pImg">
+            <img src="./images/image-jeremy.png" alt="Profile Pic of Jeremy" />
+            <span class="cIcon">
+              <i class="fas fa-camera"></i>
+            </span>
+          </a>
+          <p>report for</p>
+          <h1>Jeremy Robson</h1>
+          <div class="bio">
+            <div class="bTitle">BIO :</div>
+            <p>
+              Interviewing various celebrities is an interesting part of my
+              profession.
+            </p>
+          </div>
+        </div>
+        <div class="navs">
+          <input type="radio" name="menu" id="daily" checked />
+          <input type="radio" name="menu" id="weekly" />
+          <input type="radio" name="menu" id="monthly" />
+          <label class="nav active" for="daily">Daily</label>
+          <label class="nav" for="weekly">weekly</label>
+          <label class="nav" for="monthly">monthly</label>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card card-1">
+          <div class="bg-img">
+            <img src="./images/icon-work.svg" alt="" aria-hidden="true" />
+          </div>
+          <div class="cContent">
+            <p>Total <span class="title">Work</span> Hours :</p>
+            <span class="total">92</span>
+          </div>
+          <div class="content">
+            <div class="head">
+              <p>Work</p>
+              <button>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  aria-hidden="true"
+                  alt=""
+                />
+              </button>
+            </div>
+            <h1><span>32</span>hrs</h1>
+            <div class="last">
+              Last <span class="item">week</span> -
+              <span class="time">36</span>hrs
+            </div>
+          </div>
+        </div>
+        <div class="card card-2">
+          <div class="bg-img">
+            <img src="./images/icon-play.svg" alt="" aria-hidden="true" />
+          </div>
+          <div class="cContent">
+            <p>Total <span class="title">Work</span> Hours :</p>
+            <span class="total">92</span>
+          </div>
+          <div class="content">
+            <div class="head">
+              <p>play</p>
+              <button>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  aria-hidden="true"
+                  alt=""
+                />
+              </button>
+            </div>
+            <h1><span>10</span>hrs</h1>
+            <div class="last">
+              Last <span class="item">week</span> -
+              <span class="time">8</span>hrs
+            </div>
+          </div>
+        </div>
+        <div class="card card-3">
+          <div class="bg-img">
+            <img src="./images/icon-study.svg" alt="" aria-hidden="true" />
+          </div>
+          <div class="cContent">
+            <p>Total <span class="title">Work</span> Hours :</p>
+            <span class="total">92</span>
+          </div>
+          <div class="content">
+            <div class="head">
+              <p>study</p>
+              <button>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  aria-hidden="true"
+                  alt=""
+                />
+              </button>
+            </div>
+            <h1><span>4</span>hrs</h1>
+            <div class="last">
+              Last <span class="item">week</span> -
+              <span class="time">7</span>hrs
+            </div>
+          </div>
+        </div>
+        <div class="card card-4">
+          <div class="bg-img">
+            <img src="./images/icon-exercise.svg" alt="" aria-hidden="true" />
+          </div>
+          <div class="cContent">
+            <p>Total <span class="title">Work</span> Hours :</p>
+            <span class="total">92</span>
+          </div>
+          <div class="content">
+            <div class="head">
+              <p>exercise</p>
+              <button>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  aria-hidden="true"
+                  alt=""
+                />
+              </button>
+            </div>
+            <h1><span>4</span>hrs</h1>
+            <div class="last">
+              Last <span class="item">week</span> -
+              <span class="time">5</span>hrs
+            </div>
+          </div>
+        </div>
+        <div class="card card-5">
+          <div class="bg-img">
+            <img src="./images/icon-social.svg" alt="" aria-hidden="true" />
+          </div>
+          <div class="cContent">
+            <p>Total <span class="title">Work</span> Hours :</p>
+            <span class="total">92</span>
+          </div>
+          <div class="content">
+            <div class="head">
+              <p>social</p>
+              <button>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  aria-hidden="true"
+                  alt=""
+                />
+              </button>
+            </div>
+            <h1><span>5</span>hrs</h1>
+            <div class="last">
+              Last <span class="item">week</span> -
+              <span class="time">10</span>hrs
+            </div>
+          </div>
+        </div>
+        <div class="card card-6">
+          <div class="bg-img">
+            <img src="./images/icon-self-care.svg" alt="" aria-hidden="true" />
+          </div>
+          <div class="cContent">
+            <p>Total <span class="title">Work</span> Hours :</p>
+            <span class="total">92</span>
+          </div>
+          <div class="content">
+            <div class="head">
+              <p>Self Care</p>
+              <button>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  aria-hidden="true"
+                  alt=""
+                />
+              </button>
+            </div>
+            <h1><span>2</span>hrs</h1>
+            <div class="last">
+              Last <span class="item">week</span> -
+              <span class="time">2</span>hrs
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/Naleeka">Naleeka</a>.
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
