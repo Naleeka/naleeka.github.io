@@ -25,11 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop View](./desktopView.jpg = 1440x900)
+![Desktop View](./desktopView.jpg)
 
-![Tablet View](./tabletView.jpg = 810x1080)
+![Tablet View](./tabletView.jpg)
 
-![Mobile View](./mobileView.jpg = 428x926)
+![Mobile View](./mobileView.jpg)
 
 ### Links
 
