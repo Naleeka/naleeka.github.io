@@ -26,13 +26,13 @@ Users should be able to:
 ### Screenshot
 
 Desktop View
-![](./desktopView.jpg)
+![](./desktopView.jpg | 1440x900)
 
 Tablet View
-![](./tabletView.jpg)
+![](./tabletView.jpg | 810x1080)
 
 Mobile View
-![](./mobileView.jpg)
+![](./mobileView.jpg | 428x926)
 
 ### Links
 
