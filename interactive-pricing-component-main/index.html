@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/mediaQ.css" />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <img
+      src="./images/bg-pattern.svg"
+      aria-hidden="true"
+      alt=""
+      class="bg-ptrn"
+    />
+    <header>
+      <h1>Simple, traffic-based pricing</h1>
+      <h2>Sign-up for our 30-day trial. No credit card required.</h2>
+      <img
+        src="./images/pattern-circles.svg"
+        aria-hidden="true"
+        alt=""
+        class="bg-ptrn-cir"
+      />
+    </header>
+    <main>
+      <div class="container">
+        <div class="top">
+          <div class="packages">
+            <div class="package" id="packName">100k pageviews</div>
+            <div class="details">
+              <span class="price" id="packPrice">$<span>16</span>.00</span> /
+              <span class="time"> month</span>
+            </div>
+          </div>
+          <div class="slider">
+            <input type="range" name="range" min="0" max="4" id="slider" />
+            <div class="progress"></div>
+          </div>
+          <div class="billing">
+            <label for="bill" class="month active">Monthly billing</label>
+            <input type="checkbox" name="bill" id="bill" />
+            <label for="bill" class="year"
+              >Yearly billing<span class="desktop">25% discount</span
+              ><span class="mobile">-25%</span></label
+            >
+          </div>
+        </div>
+        <div class="bottom">
+          <ul>
+            <li>
+              <img
+                src="./images/icon-check.svg"
+                aria-hidden="true"
+                alt=""
+                class="check"
+              />Unlimited websites
+            </li>
+            <li>
+              <img
+                src="./images/icon-check.svg"
+                aria-hidden="true"
+                alt=""
+                class="check"
+              />100% Data ownership
+            </li>
+            <li>
+              <img
+                src="./images/icon-check.svg"
+                aria-hidden="true"
+                alt=""
+                class="check"
+              />Email reports
+            </li>
+          </ul>
+          <a href="#" class="trial-btn">Start my trial</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/Naleeka">Naleeka</a>.
+      </div>
+    </footer>
+
+    <script src="./js/packDetails.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
