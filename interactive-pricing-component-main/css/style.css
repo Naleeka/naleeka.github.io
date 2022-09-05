@@ -42,7 +42,6 @@ body {
   width: 100%;
   background: var(--very-pale-blue);
   padding: 7rem;
-  padding-bottom: 0;
 }
 .bg-ptrn {
   height: 444px;
