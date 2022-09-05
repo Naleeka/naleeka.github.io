@@ -29,7 +29,7 @@ slider.addEventListener("input", () => {
 function changeVals(value, timeP, array) {
   let Pprice = array[value].price;
   let Pname = array[value].name;
-  const discount = 25 / 100;
+  const discount = 75 / 100;
   if (timeP) {
     Pprice = Pprice * 12 * discount;
   }
