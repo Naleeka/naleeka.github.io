@@ -1,49 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mediaQ.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="header b-text">Social Media Dashboard</h1>
+      <div class="top">
+        <p class="total-F">Total Followers: 23,004</p>
+        <div class="mode">
+          <label for="mode" class="b-text">Dark Mode</label>
+          <input type="checkbox" name="mode" id="mode" />
+        </div>
+      </div>
+      <div class="socials">
+        <div class="fb">
+          <div class="profile">
+            <img src="./images/icon-facebook.svg" alt="" aria-hidden="true" />
+            <a
+              href="https://www.facebook.com/profile.php?id=100071402520915"
+              target="_blank"
+              class="name"
+              >@naleeka</a
+            >
+          </div>
+          <div class="amount b-text">1987</div>
+          <div class="wide-txt">Followers</div>
+          <div class="current up">
+            <img src="./images/icon-up.svg" aria-hidden="true" alt="" />
+            <span>12 Today</span>
+          </div>
+        </div>
+        <div class="twitter">
+          <div class="profile">
+            <img src="./images/icon-twitter.svg" alt="" aria-hidden="true" />
+            <a
+              href="https://www.twitter.com/_Naleeka"
+              target="_blank"
+              class="name"
+              >@_Naleeka</a
+            >
+          </div>
+          <div class="amount b-text">1044</div>
+          <div class="wide-txt">Followers</div>
+          <div class="current up">
+            <img src="./images/icon-up.svg" aria-hidden="true" alt="" />
+            <span> 99 Today</span>
+          </div>
+        </div>
+        <div class="insta">
+          <div class="profile">
+            <img src="./images/icon-instagram.svg" alt="" aria-hidden="true" />
+            <a
+              href="https://www.instagram.com/naleeka_/"
+              target="_blank"
+              class="name"
+              >@naleeka_</a
+            >
+          </div>
+          <div class="amount b-text">11k</div>
+          <div class="wide-txt">Followers</div>
+          <div class="current up">
+            <img src="./images/icon-up.svg" aria-hidden="true" alt="" />
+            <span>1099 Today</span>
+          </div>
+        </div>
+        <div class="yt">
+          <div class="profile">
+            <img src="./images/icon-youtube.svg" alt="" aria-hidden="true" />
+            <a
+              href="https://www.youtube.com/channel/UCBT80PjD9LS9m_tBcW750yQ"
+              target="_blank"
+              class="name"
+              >@naleeka</a
+            >
+          </div>
+          <div class="amount b-text">8239</div>
+          <div class="wide-txt">Subscribers</div>
+          <div class="current up">
+            <img src="./images/icon-down.svg" aria-hidden="true" alt="" />
+            <span class="down">144 Today</span>
+          </div>
+        </div>
+      </div>
+      <h1 class="header b-text">Overview - Today</h1>
+      <div class="overview">
+        <div class="p-views">
+          <div class="head">
+            <div class="title b-text">Page views</div>
+            <img src="./images/icon-facebook.svg" aria-hidden="true" alt="" />
+          </div>
+          <div class="values">
+            <h2 class="b-text">87</h2>
+            <img src="./images/icon-facebook.svg" aria-hidden="true" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="bg-ptrn"></div>
+    <div class="bg-circle"></div>
+    <!-- 
 
   Overview - Today
 
@@ -77,11 +147,15 @@
 
   Total Views
   1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  12% -->
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
