@@ -12,8 +12,18 @@
 button {
   cursor: pointer;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   width: 100%;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+a:active {
+  color: #282828;
 }
 main {
   display: flex;
@@ -169,4 +179,24 @@ footer a {
   cursor: pointer;
   text-decoration: none;
   margin-left: 0.5rem;
+}
+.arrow_up {
+  padding: 0.75rem;
+  border-radius: 50%;
+  scale: 0;
+  cursor: pointer;
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  background: #c7c7c7;
+  transition: scale 0.25s cubic-bezier(0.17, 0.67, 0.77, 1.81);
+}
+.arrow_up.active {
+  scale: 1;
+}
+.arrow_up i {
+  font-size: 1.5rem;
+}
+.arrow_up.active:active {
+  scale: 0.8;
 }
