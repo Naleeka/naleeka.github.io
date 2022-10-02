@@ -151,3 +151,18 @@ label {
 input[type="radio"] {
   display: none;
 }
+footer {
+  padding: 1rem;
+  width: 100%;
+  background: #282828;
+  color: rgb(210, 210, 210);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer a {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
