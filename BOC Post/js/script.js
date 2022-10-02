@@ -22,6 +22,14 @@ clearBtn.addEventListener("click", () => {
   }
 });
 
+window.addEventListener("scroll", () => {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.querySelector(".arrow_up").classList.add("active");
+  } else {
+    document.querySelector(".arrow_up").classList.remove("active");
+  }
+});
+
 window.addEventListener("DOMContentLoaded", () => {
   loadItems(array);
 
