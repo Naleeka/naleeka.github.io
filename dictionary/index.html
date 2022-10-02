@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>English Dictionary</h1>
+      <div class="search-bar-el">
+        <input
+          type="text"
+          name="search-bar"
+          id="search-bar"
+          placeholder="Search word here ..."
+          spellcheck="false"
+          required
+        />
+        <label for="search-bar" class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+        <label for="search-bar" class="clear">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+      </div>
+      <p class="sText">
+        Type a word and press Enter to get meaning, examples, pronounciation and
+        synonyms of that typed word
+      </p>
+      <div class="bottom">
+        <div class="audio">
+          <div class="word">
+            <h2 id="word">Hello</h2>
+            <h5 id="pronounciation">ha-elo</h5>
+          </div>
+          <i class="fa-solid fa-volume-high"></i>
+        </div>
+        <div class="meaning single">
+          <h4>Meaning</h4>
+          <p id="mean">used as a greeting or to begin a phone conversation.</p>
+        </div>
+        <div class="example single">
+          <h4>Example</h4>
+          <p id="example">hello there, Katie!</p>
+        </div>
+        <div class="synonyms single">
+          <h4>synonyms</h4>
+          <p id="synonyms">hello there, Katie!</p>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./js/script.js"></script>
+</html>

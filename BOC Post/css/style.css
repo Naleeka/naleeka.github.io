@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+:root {
+  font-size: 16px;
+}
+button {
+  cursor: pointer;
+}
+body {
+  width: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #f1f1f1;
+  padding: 2rem;
+}
+a:has(#logo) {
+  margin-bottom: 2rem;
+  user-select: none;
+}
+#logo {
+  height: 7rem;
+}
+a:has(#logo):focus {
+  outline: none;
+  border: none;
+}
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+option,
+select {
+  text-transform: capitalize;
+}
+select {
+  cursor: pointer;
+  border: 1px solid #979797;
+  margin-right: 1rem;
+  height: 100%;
+  padding: 0.25rem;
+}
+select:focus {
+  outline: 1px solid black;
+}
+#searchBar {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0.35rem 2rem;
+  height: 100%;
+  border: 1px solid #979797;
+  width: 23vw;
+}
+#searchBar:focus {
+  outline: 1px solid black;
+}
+#searchBar::placeholder {
+  text-transform: capitalize;
+}
+.search-bar {
+  position: relative;
+}
+.search-bar label i {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+}
+.search-bar .fa-magnifying-glass {
+  left: 1rem;
+  pointer-events: none;
+}
+i.fa-x {
+  cursor: pointer;
+  left: calc(100% - 1rem);
+  display: none;
+  filter: opacity(0.8);
+  transition: filter 0.25s ease;
+}
+#searchBar:valid ~ label i.fa-x {
+  display: block;
+}
+i.fa-x:hover {
+  filter: opacity(1);
+}
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+.contents .heads {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.heads > div {
+  width: 100%;
+  padding-block: 0.5rem;
+}
+.head {
+  flex: 1;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+ul {
+  width: 100%;
+}
+.content {
+  width: 100%;
+  padding-block: 0.5rem;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  transition: background 0.25s ease;
+}
+.content:hover {
+  background: #c7c7c7;
+}
+.content div {
+  flex: 1;
+}
+.bname {
+  text-transform: capitalize;
+}
+.prov {
+  text-transform: uppercase;
+}
+label {
+  cursor: pointer;
+}
+input[type="radio"] {
+  display: none;
+}
