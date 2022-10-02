@@ -1,5 +1,7 @@
-const content = document.querySelector(".contents ul");
-const headBtns = document.querySelectorAll("input[type='radio']");
+const content = document.querySelector(".contents ul"),
+  searchBar = document.querySelector("#searchBar"),
+  clearBtn = document.querySelector("#clear"),
+  headBtns = document.querySelectorAll("input[type='radio']");
 
 function loadItems(array) {
   content.innerHTML = "";
@@ -13,6 +15,12 @@ function loadItems(array) {
     `;
   }
 }
+
+clearBtn.addEventListener("click", () => {
+  if (searchBar.value) {
+    searchBar.value = "";
+  }
+});
 
 window.addEventListener("DOMContentLoaded", () => {
   loadItems(array);
