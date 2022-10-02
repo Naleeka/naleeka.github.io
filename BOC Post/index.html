@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOC</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mediaQ.css" />
+  </head>
+  <body>
+    <main>
+      <a href="./index.html">
+        <img src="./img/BOC_logo.png" alt="BOC logo" id="logo" />
+      </a>
+      <div class="search">
+        <select name="item" id="search-item">
+          <option selected disabled>search by</option>
+          <option value="brcode">branch code</option>
+          <option value="bName">branch Name</option>
+          <option value="province">province</option>
+        </select>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="searchBar"
+            placeholder="search here"
+            required
+          />
+          <label for="searchBar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+          <label for="searchBar">
+            <i class="fa-solid fa-x"></i>
+          </label>
+        </div>
+      </div>
+      <div class="contents">
+        <div class="heads">
+          <div>
+            <input type="radio" id="code" name="option" />
+            <label class="head" for="code">Branch Code</label>
+          </div>
+          <div>
+            <input type="radio" id="name" name="option" checked />
+            <label class="head" for="name">Branch name</label>
+          </div>
+          <div>
+            <input type="radio" id="prov" name="option" />
+            <label class="head" for="prov">province</label>
+          </div>
+        </div>
+        <ul></ul>
+      </div>
+    </main>
+    <script src="./js/array.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
