@@ -1,5 +1,16 @@
 @media screen and (max-width: 600px) {
   :root {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .search {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .search-bar {
+    width: 100%;
+  }
+  #searchBar {
+    width: 100%;
+    border-radius: 0.75rem;
   }
 }
