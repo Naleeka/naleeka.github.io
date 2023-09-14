@@ -4,7 +4,6 @@
   font-family: "TypoGrotesker";
   src: url(./fonts/TypoGrotesk-rqop.ttf);
 }
-
 ::selection {
   background: #000000c6;
   color: white;
@@ -661,18 +660,14 @@ form button:hover > i {
   font-size: 1rem;
   right: 0.5rem;
 }
-.right {
-  position: relative;
+#contact .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 3rem;
   background: #845ec2;
-  width: 100%;
-  height: 100%;
-}
-.right .rightbg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  /* padding: 3rem 2rem 3rem 4rem; */
+  gap: 2rem;
 }
 body.loading #preloader {
   position: absolute;
@@ -684,4 +679,63 @@ body.loading #preloader {
   z-index: 100;
   background: #fff url(./Spinner-1s-200px.gif) no-repeat center center;
   background-size: 5%;
+}
+.right > div {
+  position: relative;
+}
+.right > div > label {
+  position: absolute;
+  top: 0;
+  left: -2rem;
+}
+footer {
+  width: 100%;
+  min-height: 40vh;
+  background: #f2ecff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem 7.5rem;
+}
+.socials {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.socials span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid #000;
+  overflow: hidden;
+  transition: scale 0.25s ease;
+}
+.socials span a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.socials span:active {
+  scale: 0.95;
+}
+.socials span a i {
+  font-size: 1.2rem;
+}
+footer .logo img {
+  width: 20rem;
+  object-fit: contain;
+  height: 10%;
+}
+.copyright {
+  margin-top: 1rem;
+  color: #494949;
+  font-size: 1rem;
 }
