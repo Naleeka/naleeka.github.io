@@ -749,6 +749,7 @@ footer .logo img {
   width: 20rem;
   object-fit: contain;
   height: 10%;
+  pointer-events: none;
 }
 .copyright {
   margin-top: 1rem;
