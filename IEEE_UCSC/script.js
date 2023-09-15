@@ -15,24 +15,6 @@ aniations.forEach((animattion) => observer.observe(animattion));
 const pages = document.querySelectorAll(".page");
 const navs = document.querySelectorAll(".nav a");
 
-window.onscroll = () => {
-  pages.forEach((page) => {
-    let top = window.scrollY;
-    let offset = page.offsetTop;
-    let height = page.offsetHeight;
-    let id = page.getAttribute("id");
-
-    if (top >= offset && top < offset + height) {
-      navs.forEach((nav) => {
-        nav.classList.remove("active");
-        document
-          .querySelector(".nav[class  *=' + id + ']")
-          .parentElement.classList.add("active");
-      });
-    }
-  });
-};
-
 const body = document.querySelector("body");
 
 window.addEventListener("load", () => {
