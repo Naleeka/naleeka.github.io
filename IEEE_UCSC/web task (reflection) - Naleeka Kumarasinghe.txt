@@ -1,12 +1,16 @@
 I wanted the website to feel like something premium but I clearly had no idea what it should look like.
-So I first tried to add white-blue-red mesh colour background on navigation bar.
+So I first tried to add white-blue-red mesh color background on navigation bar.
 Then i added muted ,looped video on home page.
 I had only few topics on my mind and build sections according to those topics.
 I filled those sections contents with our IEEE main page content.
-Added some animations to make the site little alive.
+Added some animations, hover effects, click effects & icons to make the site little alive.
 
--What I learned
+-What I learned 🎓
 I learned how to use @font-face to import custom fonts
 
--What i was stucked with
-I couldn't compress the video anymore.It's quality get really bad when i tried to compress it using [https://www.veed.io/tools/video-compressor] 
+-What i was stucked with 🥴
+I couldn't compress the video anymore.It's quality get really bad when i tried to compress it using ["https://www.veed.io/tools/video-compressor"] 
+I couldn't make the web site responsive.
+
+-Issues I faced 🤔
+I couldn't make titles animations trigger when we scroll to the specific page. So I searched on youtube and found a solution to it ["https://www.youtube.com/watch?v=T33NN_pPeNI&t=212s"]

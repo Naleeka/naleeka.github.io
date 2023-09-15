@@ -1,12 +1,14 @@
 Some of my image resources are :
-
-
 RevolUX : https://scontent.xx.fbcdn.net/v/t39.30808-6/290589525_410838764434534_4807739671756159807_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5614bc&_nc_ohc=avq1pGJDfyoAX8WUuRI&_nc_ht=scontent.xx&oh=00_AfCnR_rpSb_lxeqI1yVDRCxA6UgdRPIzCZGc41zC6nB-5g&oe=6506B249
 
 madhack : https://scontent.fcmb8-1.fna.fbcdn.net/v/t39.30808-6/333540082_738320391184459_3180768964862269300_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=813123&_nc_ohc=X6iPsfQtCpMAX8vQcL-&_nc_ht=scontent.fcmb8-1.fna&oh=00_AfAzzfHPV4oNzxFZAZbhxxdgeOAqma2Dy3PsWsOIOnO8Ig&oe=650605F7
 
 reidxtreme : https://ucscieee.lk/images/event-covers/reidxtreme.webp
 
+
 Video used in the home page : https://ucscieee.lk/ 
 
+
 I downloaded the logo from the ieee student branch website and changed it colours using adobe illustrator
+
+Icons used - Fontawesome["https://fontawesome.com/"]
